@@ -1,0 +1,31 @@
+/* 1) External font imports FIRST */
+@import "@fontsource/quicksand/400.css";
+@import "@fontsource/quicksand/500.css";
+@import "@fontsource/quicksand/600.css";
+@import "@fontsource/quicksand/700.css";
+
+/* 2) Self-hosted Porsha Richela (path & file name must match exactly) */
+@font-face {
+  font-family: "Porscha Richela";
+  src: url("/fonts/PorshaRichela.ttf") format("truetype");
+  font-weight: 100 300 500 600 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 3) Tailwind core */
+@import "tailwindcss";
+
+/* 4) Tailwind v4 tokens via @theme (no tailwind.config.js needed) */
+@theme {
+  --font-porscha: "Porsha Richela", serif;
+  --font-quicksand: "Quicksand", system-ui, ui-sans-serif, sans-serif;
+}
+
+
+
+/* Your global styles below */
+html, body, #root {
+  height: 100%;
+  background-color: #FFF2DD;
+}
