@@ -29,3 +29,31 @@ html, body, #root {
   height: 100%;
   background-color: #FFF2DD;
 }
+
+/* Make the browser use dark-ish native UI when possible */
+.contact-form { color-scheme: dark; }
+
+/* Chrome / Edge / Safari */
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover,
+.contact-form input:-webkit-autofill:focus,
+.contact-form textarea:-webkit-autofill,
+.contact-form textarea:-webkit-autofill:hover,
+.contact-form textarea:-webkit-autofill:focus,
+.contact-form select:-webkit-autofill,
+.contact-form select:-webkit-autofill:hover,
+.contact-form select:-webkit-autofill:focus {
+  /* match your current input bg: Tailwind bg-white/5 ≈ rgba(255,255,255,0.05) */
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.05) inset !important;
+  -webkit-text-fill-color: #FFF2DD !important;   /* your text color */
+  caret-color: #FFF2DD !important;
+  transition: background-color 9999s ease-in-out 0s; /* prevents white flash */
+}
+
+/* Firefox */
+.contact-form input:-moz-autofill,
+.contact-form textarea:-moz-autofill,
+.contact-form select:-moz-autofill {
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.05) inset !important;
+  -moz-text-fill-color: #FFF2DD !important;
+}

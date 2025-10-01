@@ -2,17 +2,56 @@
 import React from "react";
 
 export default function ContactForm() {
+  const [result, setResult] = React.useState("");
+  const [submitting, setSubmitting] = React.useState(false);
   const headingClass =
     "font-porscha text-[#FFF2DD] text-[44px] leading-[1.06] sm:text-[56px] lg:text-[72px] lg:leading-[1.04]";
   const labelClass = "sr-only";
   const inputBase =
-    "w-full rounded-md border border-[#FFF2DD]/10 bg-white/5 px-4 py-5 " +
-    "text-[#FFF2DD] placeholder-[#FFF2DD]/80 outline-none " +
-    "focus-visible:ring-2 focus-visible:ring-[#FFF2DD]/40 focus-visible:border-transparent " +
+    "w-full rounded-md border border-[#FFF2DD]/10 bg-white/5 px-4 py-5 " 
+    "text-[#FFF2DD] placeholder-[#FFF2DD]/80 outline-none " 
+    "focus-visible:ring-2 focus-visible:ring-[#FFF2DD]/40 focus-visible:border-transparent " 
     "transition";
+
+    
+  const onSubmit = async (event) => {
+  event.preventDefault();
+
+  setSubmitting(true);
+  try {
+    setResult("Sending…");
+    const formData = new FormData(event.target);
+
+    // 👇 keep your real key here (public by design in Web3Forms)
+    formData.append("access_key", "5bde4d34-5cc4-4bff-9da4-67ee92d58d51");
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await res.json();
+    if (data.success) {
+      setResult("Form submitted successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message || "Submission failed");
+    }
+  } catch (e) {
+    console.error(e);
+    setResult("Network error. Please try again.");
+  } finally {
+    setSubmitting(false);
+  }
+};
 
   return (
     <section className="relative bg-[#005930] text-[#FFF2DD]">
+      {/* invisible helpers for cleaner emails – no styling impact */}
+  <input type="hidden" name="subject" value="New message from Firdaus Contact Form" />
+
+  <input type="hidden" name="from_name" value="Firdaus Awadhi Kitchen" />
       <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6 py-12 sm:py-16">
         {/* Two equal parts with padding like ContactBanner content spacing */}
         <div className="grid grid-cols-12 gap-y-12 lg:gap-x-10">
@@ -71,11 +110,8 @@ export default function ContactForm() {
               <h2 className={headingClass}>Request Form</h2>
 
               <form
-                className="mt-6 space-y-5"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  // TODO: hook into your submit handler
-                }}
+                className="contact-form mt-6 space-y-5"
+                onSubmit={onSubmit}
               >
                 {/* Full width name */}
                 <div>
@@ -150,7 +186,7 @@ export default function ContactForm() {
                     name="message"
                     rows={5}
                     placeholder="Message..."
-                    className={`${inputBase} resize-y`}
+                    className={`${inputBase} resize-none`}
                     required
                   />
                 </div>
@@ -159,12 +195,14 @@ export default function ContactForm() {
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center rounded-md bg-[#FFF2DD] px-6 py-2.5 font-quicksand text-[16px] text-[#005930] shadow-sm transition hover:bg-[#FFF2DD]/95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-0 focus-visible:ring-[#FFF2DD]/40"
+                    disabled={submitting}
+                    className="inline-flex cursor-pointer items-center justify-center rounded-md bg-[#FFF2DD] px-6 py-2.5 font-quicksand text-[16px] text-[#005930] shadow-sm transition hover:bg-[#FFF2DD]/95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-0 focus-visible:ring-[#FFF2DD]/40"
                   >
-                    Submit
+                    { submitting ? "Sending..." : "Submit" }
                   </button>
                 </div>
               </form>
+              <p className="mt-2 text-sm opacity-80" aria-live="polite">{result}</p>
             </div>
           </div>
         </div>
@@ -187,3 +225,4 @@ function SocialCircle({ href, label, children }) {
     </a>
   );
 }
+
