@@ -60,23 +60,23 @@ export default function ContactForm() {
           {/* LEFT: Contact info */}
           <div className="col-span-12 lg:col-span-6">
             <div className="p-2 sm:p-3 md:p-4 lg:p-5">
-              <h2 className={headingClass}>Get in Touch</h2>
+              <h2 className={headingClass} data-aos="fade-right" data-aos-duration="800">Get in Touch</h2>
 
-              <div className="mt-6 space-y-2 font-quicksand text-[15px] sm:text-[16px] leading-7 opacity-95">
+              <div className="mt-6 space-y-2 font-quicksand text-[15px] sm:text-[16px] leading-7 opacity-95" data-aos="fade-right" data-aos-duration="800">
                 <p>+91 - 12345 67890</p>
                 <p>firdausawadhikitchen@gmail.com</p>
                 <p>Working Hours: 12:30 AM–10:30 PM</p>
               </div>
 
-              <h3 className={`${headingClass} mt-10`}>Address</h3>
-              <div className="mt-4 space-y-1 font-quicksand text-[15px] sm:text-[16px] leading-7 opacity-95">
+              <h3 className={`${headingClass} mt-10`} data-aos="fade-right" data-aos-duration="800">Address</h3>
+              <div className="mt-4 space-y-1 font-quicksand text-[15px] sm:text-[16px] leading-7 opacity-95" data-aos="fade-right" data-aos-duration="800">
                 <p>C-10, Kisan Bazaar,</p>
                 <p>Lucknow, Uttar Pradesh</p>
                 <p>226010</p>
               </div>
 
-              <h3 className={`${headingClass} mt-10`}>Follow Us</h3>
-              <div className="mt-4 flex items-center gap-3">
+              <h3 className={`${headingClass} mt-10`} data-aos="fade-right" data-aos-duration="800">Follow Us</h3>
+              <div className="mt-4 flex items-center gap-3" data-aos="fade-right" data-aos-duration="800">
                 {/* Social icons inside #FFF2DD circle with #005930 icon color */}
                 <SocialCircle href="https://www.facebook.com/firdausawadhkitchen/" label="Facebook">
                   {/* Minimal FB mark */}

@@ -146,10 +146,10 @@ export default function GallerySection({
         <SectionDecor className="mb-2" />
 
         {/* Heading + CTA (same rhythm as AboutSection) */}
-        <div className="mb-14 grid grid-cols-1 lg:grid-cols-[minmax(0,520px)_1fr] items-end gap-6 lg:gap-16">
+        <div className="mb-14 grid grid-cols-1 lg:grid-cols-[minmax(0,520px)_1fr] items-end gap-6 lg:gap-16"  >
           <h2
             id="events-title"
-            className="text-5xl font-porscha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]"
+            className="text-5xl font-porscha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]" data-aos="fade-right"  data-aos-duration="800"
           >
             Upcoming Events <br className="hidden sm:block" /> & Workshops
           </h2>
@@ -157,7 +157,7 @@ export default function GallerySection({
           <div className="flex lg:justify-end">
             <a
               href="/event"
-              className={`${underlineGrow} font-quicksand text-[22px] text-[#005931]`}
+              className={`${underlineGrow} font-quicksand text-[22px] text-[#005931]`} data-aos="fade-left"  data-aos-duration="800"
             >
               <span className="transition-colors duration-300">
                 View All Events

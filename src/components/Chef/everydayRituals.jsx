@@ -21,7 +21,7 @@ export default function EverydayRituals() {
         {/* Mobile: single column; Large: 12-col grid for 45/55 + 50/50 rows */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-y-12 gap-x-8 lg:gap-x-16 items-stretch">
           {/* TITLE — mobile order 1, large order 1; large span ~45% */}
-          <div className="min-w-0 order-1 lg:order-1 lg:col-span-5">
+          <div className="min-w-0 order-1 lg:order-1 lg:col-span-5" data-aos="fade-in"  data-aos-duration="800">
             <h2 className="font-porscha leading-tight text-[34px] sm:text-[46px] lg:text-[60px]">
               Learning Through Everyday Rituals
             </h2>
@@ -29,7 +29,7 @@ export default function EverydayRituals() {
 
           {/* IMAGE 1 (top-right) — mobile order 2, large order 2; large span ~55% */}
           <div className="min-w-0 order-2 lg:order-2 lg:col-span-7">
-            <div className="w-full overflow-hidden rounded-lg bg-white/5">
+            <div className="w-full overflow-hidden rounded-lg bg-white/5" data-aos="fade-left"  data-aos-duration="800">
               <img
                 src={food20}
                 alt=""
@@ -41,7 +41,7 @@ export default function EverydayRituals() {
 
           {/* IMAGE 2 (bottom-left on lg) — mobile order 4, large order 3; large span 50% */}
           <div className="min-w-0 order-4 lg:order-3 lg:col-span-6">
-            <div className="w-full overflow-hidden rounded-xl">
+            <div className="w-full overflow-hidden rounded-xl" data-aos="fade-right"  data-aos-duration="800">
               <img
                 src={food11}
                 alt=""
@@ -54,7 +54,7 @@ export default function EverydayRituals() {
           {/* PARAGRAPH (bottom-right on lg) — mobile order 3, large order 4; large span 50% */}
           <div className="min-w-0 order-3 lg:order-4 lg:col-span-6">
             {/* keep vertical centering on large if desired */}
-            <div className="h-full flex items-center">
+            <div className="h-full flex items-center" data-aos="fade-in"  data-aos-duration="800">
               <p className="break-words font-quicksand text-[15px] leading-7 sm:text-[16px] sm:leading-8 opacity-95 py-4 sm:py-6 lg:py-8">
                 In our kitchen, the smallest acts—peeling garlic, sorting greens,
                 roasting a single chilli—were done with intention, reverence, and

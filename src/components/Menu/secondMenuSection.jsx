@@ -62,7 +62,7 @@ export default function SecondMenuSection() {
               src={menuTwo}
               alt="Signature dish illustration"
               className="max-h-[340px] sm:max-h-[380px] lg:max-h-[420px] w-auto object-contain"
-              draggable="false"
+              draggable="false" data-aos="zoom-in"  data-aos-duration="900"
             />
           </div>
 
@@ -76,7 +76,7 @@ export default function SecondMenuSection() {
               Half/Full
             </div>
 
-            <ul>
+            <ul data-aos="fade-left"  data-aos-duration="900">
               {items.map((it, idx) => (
                 <li key={idx} className="py-5 first:pt-8">
                   {/* Name — leader — Price */}

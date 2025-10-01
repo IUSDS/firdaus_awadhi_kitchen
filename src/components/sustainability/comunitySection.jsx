@@ -21,6 +21,7 @@ function ProgressCircle({
       className="relative inline-block"
       role="img"
       aria-label={ariaLabel ?? `Progress ${v}%`}
+      data-aos="fade-in" data-aos-duration="800"
     >
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
         <circle
@@ -89,16 +90,16 @@ export default function CommunitySection({
           <div className="relative z-10 flex h-full items-center">
             <div className="w-full max-w-3xl px-10 sm:px-14 lg:px-20 py-10 sm:py-12">
               {/* Heading — matches EcoPracticesSection sizing (font + scale) */}
-              <h2 className="font-porscha text-white leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl">
+              <h2 className="font-porscha text-white leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl" data-aos="fade-up" data-aos-duration="800">
                 Community Ties
               </h2>
 
               {/* Description list — same visual weight as Eco list items, left-aligned */}
-              <ul className="mt-6 space-y-3 max-w-2xl">
+              <ul className="mt-6 space-y-3 max-w-2xl" >
                 {bullets.map((b, i) => (
                   <li
                     key={i}
-                    className="font-quicksand font-[500] text-white/95 text-[clamp(18px,1.4vw,18px)]"
+                    className="font-quicksand font-[500] text-white/95 text-[clamp(18px,1.4vw,18px)]" data-aos="fade-up" data-aos-duration="800"
                   >
                     {b}
                   </li>
@@ -118,7 +119,7 @@ export default function CommunitySection({
               >
                 {/* Description (left) */}
                 <div className="pr-8 max-w-[64%] px-3 lg:px-4">
-                  <p className="font-quicksand text-lg sm:text-xl lg:text-2xl leading-7 sm:leading-8 lg:leading-9 font-[600]">
+                  <p className="font-quicksand text-lg sm:text-xl lg:text-2xl leading-7 sm:leading-8 lg:leading-9 font-[600]" data-aos="fade-in" data-aos-duration="800">
                     {it.desc}
                   </p>
                 </div>

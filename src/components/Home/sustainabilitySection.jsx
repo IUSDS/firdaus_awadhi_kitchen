@@ -87,16 +87,16 @@ export default function SustainabilitySection({
 }) {
   return (
     <section className="relative isolate px-4 sm:px-6 lg:pt-30 md:pt-24 pt-22">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-7xl" >
         {/* Decor strip — same spacing cadence as Events */}
         <SectionDecor className="mb-2" />
 
         {/* Heading + Right CTA (mirrors Events heading block) */}
         <div className="mb-14 grid grid-cols-1 lg:grid-cols-[minmax(0,520px)_1fr] items-end gap-6 lg:gap-16">
-          <div>
+          <div data-aos="fade-right"  data-aos-duration="900">
             <h2
               id={`${id}-title`}
-              className="text-5xl font-porscha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]"
+              className="text-5xl font-porscha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]" 
             >
               Sustainability Highlight
             </h2>
@@ -105,7 +105,7 @@ export default function SustainabilitySection({
             </p>
           </div>
 
-          <div className="flex lg:justify-end">
+          <div className="flex lg:justify-end" data-aos="fade-left"  data-aos-duration="900">
             <a href="/sustainability" className={`${underlineGrow} font-quicksand text-[22px] text-[#005931]`}>
               <span className="transition-colors duration-300">Read More</span>
               <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -158,7 +158,7 @@ export default function SustainabilitySection({
               - Mobile: center items and dividers
               - ≥sm: start-align items
               - ≥lg: bring columns further inward so they don't stick to the right */}
-          <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-y-12 sm:gap-y-16 place-items-center sm:place-items-start mx-auto max-w-[48rem] sm:max-w-[60rem] px-4 sm:px-0">
+          <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-y-12 sm:gap-y-16 place-items-center sm:place-items-start mx-auto max-w-[48rem] sm:max-w-[60rem] px-4 sm:px-0" data-aos="fade-in"  data-aos-duration="800">
             <div className="w-full sm:w-auto sm:pl-10 lg:pl-16 xl:pl-20"><Feature {...features[0]} /></div>
             <div className="w-full sm:w-auto sm:pr-10 lg:pr-16 xl:pr-20"><Feature {...features[1]} /></div>
             <div className="w-full sm:w-auto sm:pl-10 lg:pl-16 xl:pl-20"><Feature {...features[2]} /></div>

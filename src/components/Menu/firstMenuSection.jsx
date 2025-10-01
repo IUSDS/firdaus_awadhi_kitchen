@@ -65,7 +65,7 @@ export default function FirstMenuSection() {
         {/* Heading – mirror ChefQuotes spacing/scale */}
         <h2
           className="text-3xl sm:text-4xl lg:text-6xl font-porscha"
-          style={{ color: MENU_GREEN }}
+          style={{ color: MENU_GREEN }} data-aos="fade-in"  data-aos-duration="900"
         >
           MENU
         </h2>
@@ -82,7 +82,7 @@ export default function FirstMenuSection() {
               Half/Full
             </div>
 
-            <ul>
+            <ul data-aos="fade-right"  data-aos-duration="900">
               {items.map((it, idx) => (
                 <li key={idx} className="py-5 first:pt-8">
                   {/* Name — leader — Price */}
@@ -126,7 +126,7 @@ export default function FirstMenuSection() {
               src={menuOne}
               alt="Signature dish illustration"
               className="max-h-[340px] sm:max-h-[380px] lg:max-h-[420px] w-auto object-contain"
-              draggable="false"
+              draggable="false" data-aos="zoom-in"  data-aos-duration="900"
             />
           </div>
         </div>

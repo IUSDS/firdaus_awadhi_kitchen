@@ -19,7 +19,7 @@ export default function WorkshopBannerSection() {
           />
         </div>
 
-      <div className="mx-auto max-w-7xl text-center">
+      <div className="mx-auto max-w-7xl text-center" n data-aos="fade-in" data-aos-duration="800">
         {/* Subheading (top) */}
         <p className="font-quicksand text-[clamp(16px,1.8vw,22px)] text-[#005931] font-bold uppercase">
           LEARN THE ART OF

@@ -51,6 +51,7 @@ export default function IntroHome({
       <img
         src={bottomImg}
         alt=""
+        fetchPriority="high"
         aria-hidden="true"
         className="
           pointer-events-none select-none
@@ -69,7 +70,7 @@ export default function IntroHome({
           /* extra whitespace so text sits comfortably above the skyline */
           pb-56 sm:pb-64 lg:pb-72
           text-center
-        "
+        " data-aos="fade-up"  data-aos-duration="800"
       >
         <h1
           className="
@@ -92,7 +93,7 @@ export default function IntroHome({
         </p>
 
         {/* Actions */}
-        <a href="/chef" className="mt-8 sm:mt-10 cursor-pointer flex items-center justify-center gap-4 sm:gap-5">
+        <a href="/chef" className="mt-8 sm:mt-10 cursor-pointer flex items-center justify-center gap-4 sm:gap-5" data-aos="fade-up"  data-aos-duration="800">
           <FillButton variant="outline">
             Meet the Chef
           </FillButton>

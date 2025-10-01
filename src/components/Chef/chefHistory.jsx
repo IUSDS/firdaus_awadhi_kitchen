@@ -38,7 +38,7 @@ export default function ChefHistory({
             font-porscha
             text-4xl sm:text-5xl md:text-6xl lg:text-7xl
             text-[#005930]
-          "
+          " data-aos="fade-up"  data-aos-duration="800"
         >
           ROOTS IN A CULINARY LEGACY
         </h1>
@@ -48,7 +48,7 @@ export default function ChefHistory({
             mx-auto px-4 md:px-6 lg:px-0 font-quicksand mt-10 sm:mt-12 max-w32xl text-lg
             sm:text-xl md:text-xl
             text-[#005930]
-          "
+          " data-aos="fade-in"  data-aos-duration="800"
         >
           I grew up in the heart of Lucknow, in a joint family of 22 where every meal was a collective ritual and food was never just sustenance; it was a legacy. My earliest memories are of trailing behind my uncle through the bustling mandi, learning how to choose the freshest vegetables, or standing beside my father as he carefully selected meat from the butcher, discussing cuts like a connoisseur.
         </p>

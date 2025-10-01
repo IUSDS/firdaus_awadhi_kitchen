@@ -10,7 +10,7 @@ export default function PhilosophySection() {
       <div className="relative bg-[#005931]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:pt-30 md:pt-24 pt-22 pb-10 md:pb-12">
           {/* Heading */}
-          <h2 className="text-center font-porscha text-[#FFF2DD] leading-[1.15] text-[clamp(42px,5.6vw,58px)]">
+          <h2 className="text-center font-porscha text-[#FFF2DD] leading-[1.15] text-[clamp(42px,5.6vw,58px)]" data-aos="fade-up"  data-aos-duration="800">
             Philosophy &amp; Inspirations
           </h2>
 
@@ -18,7 +18,7 @@ export default function PhilosophySection() {
           <div className="mt-5 md:mt-6 space-y-6 md:space-y-8">
             {/* Row 1 */}
             <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-5 md:gap-7 lg:gap-10">
-              <div className="lg:col-span-5 order-1">
+              <div className="lg:col-span-5 order-1" data-aos="fade-right"  data-aos-duration="800">
                 <img
                   src={philosophy1}
                   alt=""
@@ -26,7 +26,7 @@ export default function PhilosophySection() {
                   loading="lazy" decoding="async" draggable="false"
                 />
               </div>
-              <div className="lg:col-span-7 order-2">
+              <div className="lg:col-span-7 order-2" data-aos="fade-left"  data-aos-duration="800">
                 <p className="text-[#FFF2DD]/90 font-quicksand font-medium leading-7 max-w-prose mx-auto lg:mx-0 text-center lg:text-left">
                   At Firdaus, authenticity is everything. We honour recipes measured not
                   just in teaspoons, but in memory, instinct, and care.
@@ -38,7 +38,7 @@ export default function PhilosophySection() {
 
             {/* Row 2 (reverse on lg; image first on mobile) */}
             <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-5 md:gap-7 lg:gap-10">
-              <div className="lg:col-span-5 order-1 lg:order-2">
+              <div className="lg:col-span-5 order-1 lg:order-2" data-aos="fade-left"  data-aos-duration="800">
                 <img
                   src={philosophy2}
                   alt=""
@@ -46,7 +46,7 @@ export default function PhilosophySection() {
                   loading="lazy" decoding="async" draggable="false"
                 />
               </div>
-              <div className="lg:col-span-7 order-2 lg:order-1">
+              <div className="lg:col-span-7 order-2 lg:order-1" data-aos="fade-right"  data-aos-duration="800">
                 <p className="text-[#FFF2DD]/90 font-quicksand font-medium leading-7 max-w-prose mx-auto lg:mx-0 text-center lg:text-left">
                   We hope to bring the warmth of families in our hospitality, so when you
                   visit Firdaus, our food offers instant comfort, connection, and calm.
@@ -58,7 +58,7 @@ export default function PhilosophySection() {
 
             {/* Row 3 */}
             <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-5 md:gap-7 lg:gap-10">
-              <div className="lg:col-span-5 order-1">
+              <div className="lg:col-span-5 order-1" data-aos="fade-right"  data-aos-duration="800">
                 <img
                   src={philosophy3}
                   alt=""
@@ -66,7 +66,7 @@ export default function PhilosophySection() {
                   loading="lazy" decoding="async" draggable="false"
                 />
               </div>
-              <div className="lg:col-span-7 order-2">
+              <div className="lg:col-span-7 order-2" data-aos="fade-left"  data-aos-duration="800">
                 <p className="text-[#FFF2DD]/90 font-quicksand font-medium leading-7 max-w-prose mx-auto lg:mx-0 text-center lg:text-left">
                   Some dishes are rooted in centuries-old Awadhi kitchens, others in the
                   warmth of our family home. Together, they tell a living story of traditions

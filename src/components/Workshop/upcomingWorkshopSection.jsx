@@ -62,7 +62,7 @@ export default function UpcomingWorkshopSection({
       {/* Narrower container */}
       <div className="relative z-10 mx-auto max-w-3xl">
         {/* Subheading + Heading (slightly smaller) */}
-        <div className="text-center">
+        <div className="text-center"  data-aos="fade-up" data-aos-duration="800">
           <p className="font-quicksand font-semibold uppercase text-[clamp(23px,1.35vw,22px)]">
             Upcoming
           </p>
@@ -92,7 +92,7 @@ function WorkshopRow({ imgSrc = "", title, description }) {
     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5 md:gap-7">
       {/* Left: Image (slightly smaller via inner max-width) */}
       <div className="w-full md:justify-self-end md:max-w-[92%]">
-        <div className="relative aspect-[5/3] rounded-xl overflow-hidden bg-[#E7E7E7]">
+        <div className="relative aspect-[5/3] rounded-xl overflow-hidden" data-aos="zoom-in" data-aos-duration="800">
           {imgSrc ? (
             <img
               src={imgSrc}
@@ -101,13 +101,14 @@ function WorkshopRow({ imgSrc = "", title, description }) {
               loading="lazy"
               decoding="async"
               draggable="false"
+               
             />
           ) : null}
         </div>
       </div>
 
       {/* Right: Title + Description (smaller sizes) */}
-      <div className="w-full ml-2 md:justify-self-start md:max-w-[92%]">
+      <div className="w-full ml-2 md:justify-self-start md:max-w-[92%]" data-aos="zoom-in" data-aos-duration="800">
         <h3 className="font-porscha text-[clamp(24px,2.1vw,22px)] leading-tight">
           {title}
         </h3>

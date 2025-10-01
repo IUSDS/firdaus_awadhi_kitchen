@@ -94,7 +94,7 @@ export default function Navbar() {
             <div className="flex items-center gap-2 justify-self-end col-start-3">
               {/* Desktop CTA only (>= 868px) */}
               <a
-                href="/contact#contacform"
+                href="/contact"
                 className="hidden min-[868px]:inline-flex rounded-full bg-[#005931] md:text-[10px] lg:text-[12px] -[0.20em] text-[#FFF2DD] py-3 px-6"
               >
                 BOOK NOW
@@ -171,7 +171,7 @@ export default function Navbar() {
 
             {/* Single BOOK NOW on mobile */}
             <a
-              href="#book"
+              href="/contact"
               onClick={() => setOpen(false)}
               className="inline-flex font-quicksand rounded-full bg-white/10 hover:bg-[#FFF2DD] hover:text-[#005931] transition duration-500 px-28 py-5 text-[15px] font-semibold text-[#FFF2DD]"
             >

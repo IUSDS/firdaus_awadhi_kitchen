@@ -31,12 +31,12 @@ export default function CateringSection({ imageSrc = "" }) {
               />
 
               {/* Heading — same sizing/leading rhythm as quoteBanner.jsx */}
-              <h2 className="text-5xl sm:text-6xl lg:text-6xl leading-[1.3] -tight font-porscha">
+              <h2 className="text-5xl sm:text-6xl lg:text-6xl leading-[1.3] -tight font-porscha"  data-aos="fade-in" data-aos-duration="800">
                 Host With Us
               </h2>
 
               {/* Description */}
-              <p className="mt-6 text-base sm:text-lg font-quicksand opacity-95">
+              <p className="mt-6 text-base sm:text-lg font-quicksand opacity-95"  data-aos="fade-in" data-aos-duration="800">
                 Firdaus welcomes collaborative hosting for:
               </p>
 
@@ -44,7 +44,7 @@ export default function CateringSection({ imageSrc = "" }) {
               <ul className="mt-8 space-y-6">
                 {items.map((label) => (
                   <li key={label} className="w-full max-w-[430px]">
-                    <div className="text-[17px] sm:text-[18px] lg:text-[19px]">
+                    <div className="text-[17px] sm:text-[18px] lg:text-[19px]"  data-aos="fade-right" data-aos-duration="800">
                       {label}
                     </div>
                     <div className="mt-2 h-px w-full bg-[#FFF2DD]/80" />

@@ -33,7 +33,7 @@ export default function MeetTheChefBanner({
         {/* Make row height equal to tallest item (left text), then stretch right image to match */}
         <div className="grid grid-cols-12 gap-x-6 gap-y-12 items-stretch">
           {/* LEFT: Heading + paragraph */}
-          <div className="col-span-12 lg:col-span-7 self-start">
+          <div className="col-span-12 lg:col-span-7 self-start" data-aos="fade-in"  data-aos-duration="800">
             <h2 className="font-porscha text-[44px] sm:text-[56px] lg:text-[72px]">
               {heading}
             </h2>
@@ -45,7 +45,7 @@ export default function MeetTheChefBanner({
 
           {/* RIGHT: Chef (tall) — matches LEFT column height on lg+ */}
           <div className="col-span-12 lg:col-span-5 lg:self-stretch">
-            <div className="relative ml-auto w-full h-[300px] sm:h-[360px] lg:h-full overflow-hidden">
+            <div className="relative ml-auto w-full h-[300px] sm:h-[360px] lg:h-full overflow-hidden" data-aos="fade-left"  data-aos-duration="800">
               <img
                 src={asmahome}
                 alt=""
@@ -57,7 +57,7 @@ export default function MeetTheChefBanner({
 
           {/* BOTTOM LEFT: Narrower wide image (reduced span on lg+) */}
           <div className="col-span-12 lg:col-span-7 xl:col-span-9">
-            <div className="relative w-full overflow-hidden">
+            <div className="relative w-full overflow-hidden" data-aos="fade-right"  data-aos-duration="800">
               <img
                 src={food10}
                 alt=""

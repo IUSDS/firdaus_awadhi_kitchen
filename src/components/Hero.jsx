@@ -112,8 +112,8 @@ export default function HeroSection({
         )}
 
         {/* Heading layer */}
-        <div className={`absolute inset-0 flex ${hJustify} ${vItems} ${sidePad}`}>
-          <h1 className={`font-porscha text-[56px] sm:text-7xl lg:text-8xl text-[#FFF2DD] ${textAlign}`}>
+        <div className={`absolute inset-0 flex ${hJustify} ${vItems} ${sidePad}`} data-aos="fade-up" data-aos-duration="800">
+          <h1 className={`font-porscha text-5xl sm:text-7xl lg:text-8xl text-[#FFF2DD] ${textAlign}`}>
             {title}
           </h1>
         </div>

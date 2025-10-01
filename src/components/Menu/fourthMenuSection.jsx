@@ -63,6 +63,7 @@ export default function FourthMenuSection() {
               alt="Chicken dish illustration"
               className="max-h-[300px] sm:max-h-[340px] lg:max-h-[380px] w-auto object-contain"
               draggable="false"
+              data-aos="zoom-in"  data-aos-duration="900"
             />
           </div>
 
@@ -76,7 +77,7 @@ export default function FourthMenuSection() {
               Half/Full
             </div>
 
-            <ul>
+            <ul data-aos="fade-left"  data-aos-duration="900">
               {items.map((it, idx) => (
                 <li key={idx} className="py-5 first:pt-8">
                   {/* Name — leader — Price */}

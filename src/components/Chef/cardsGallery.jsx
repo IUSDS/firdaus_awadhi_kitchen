@@ -68,10 +68,10 @@ export default function CardGallerySection({
 
         {/* Heading and subtext inside the banner, centered */}
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 lg:py-24 text-center text-[#FFF2DD]">
-          <h2 className="font-porscha leading-[1.15] text-[clamp(40px,5.2vw,58px)]">
+          <h2 className="font-porscha leading-[1.15] text-[clamp(40px,5.2vw,58px)]"  data-aos="fade-up"  data-aos-duration="800">
             {title}
           </h2>
-          <p className="mt-2 font-quicksand text-[clamp(16px,2.3vw,20px)]">
+          <p className="mt-2 font-quicksand text-[clamp(16px,2.3vw,20px)]"  data-aos="fade-in"  data-aos-duration="800">
             {subtitle}
           </p>
 

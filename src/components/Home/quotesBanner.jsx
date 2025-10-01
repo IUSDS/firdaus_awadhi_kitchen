@@ -9,12 +9,12 @@ export default function QuoteBanner() {
     <section
       className="relative isolate px-4 sm:px-6 lg:pt-30 md:pt-24 pt-22"
     >
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-7xl" >
         {/* Decor strip (separate row) — same as eventsGallery */}
         <SectionDecor className="mb-2" />
 
         {/* Heading row — same styling & spacing as eventsGallery */}
-        <div className="mb-14 grid grid-cols-1 lg:grid-cols-[minmax(0,520px)_1fr] items-end gap-6 lg:gap-16">
+        <div className="mb-14 grid grid-cols-1 lg:grid-cols-[minmax(0,520px)_1fr] items-end gap-6 lg:gap-16" data-aos="fade-right"  data-aos-duration="800">
           <h2
             id="quote-banner-title"
             className="text-5xl font-porscha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]"
@@ -31,7 +31,7 @@ export default function QuoteBanner() {
         {/* Lock shared height on md+ so image and banner align perfectly */}
         <div className="flex flex-col md:flex-row md:h-[440px] lg:h-[520px]">
           {/* Left Image (w-1/4 on md+) */}
-          <div className="relative w-full md:w-2/5 h-[58vw] min-h-[260px] md:h-full">
+          <div className="bg-[#005930] relative w-full md:w-2/5 h-[58vw] min-h-[260px] md:h-full" data-aos="fade-in"  data-aos-duration="800">
             <img
               src={food1}
               alt="Decorative showcase image for the quote banner"
@@ -45,7 +45,7 @@ export default function QuoteBanner() {
           {/* Right Banner */}
           <div className="relative w-full md:w-3/5 bg-[#005931] text-[#FFF2DD]">
             {/* Top strip — same pattern as SignatureDishes */}
-            <div className="relative h-8 md:h-10 pointer-events-none select-none">
+            <div className="relative h-8 md:h-10 pointer-events-none select-none" >
               <img
                 src={sectionStrip}
                 alt=""
@@ -56,7 +56,7 @@ export default function QuoteBanner() {
 
             {/* Centered content */}
             <div className="flex items-center justify-start text-left px-6 sm:px-10 lg:px-16 py-8 md:py-0 md:h-[calc(100%-5rem)]">
-              <div className="max-w-3xl relative">
+              <div className="max-w-3xl relative" data-aos="fade-up"  data-aos-duration="800">
                 <p className="font-porscha leading-[1.45] -wide text-[clamp(22px,3vw,36px)]">
                   “Firdaus is my way of honouring the hands that fed me—with care, memory, and quiet mastery.”
                 </p>

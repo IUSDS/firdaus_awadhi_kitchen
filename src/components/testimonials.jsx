@@ -95,7 +95,7 @@ export default function Testimonials({
       className="relative isolate px-4 sm:px-6 lg:pt-30 md:pt-24 pt-22"
     >
       {/* Centered heading (same scale as Events) */}
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-7xl" data-aos="fade-up"  data-aos-duration="800">
         <div className="mb-12 sm:mb-14 flex items-center justify-center gap-3 sm:gap-4">
           <img
             src={h1decorL}

@@ -11,10 +11,27 @@ import Chef from "./pages/Chef";
 
 import { SEO } from "./seo/SEO";
 import { SITE_URL } from "./seo/siteMeta";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const { pathname } = useLocation();
   const canonical = `${SITE_URL}${pathname}`;
+
+   useEffect(() => {
+    AOS.init({      // default animation duration
+      easing: "ease-out-quad",
+      offset: 24,           // trigger slightly before element is in view
+      once: true,           // animate only once per element
+    });
+
+    // If your pages load content dynamically, refresh on route/content changes:
+    const onLoad = () => AOS.refresh();
+    window.addEventListener("load", onLoad);
+    return () => window.removeEventListener("load", onLoad);
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">

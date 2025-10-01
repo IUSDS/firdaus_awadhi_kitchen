@@ -15,11 +15,13 @@ export default function ChefStorySection() {
         style={{
           backgroundImage: `url(${sectionHanging})`,
           contentVisibility: "auto",
-        }}
+        }} data-aos="fade-down"  data-aos-duration="800"
       />
 
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-7xl" >
         {/* Desktop/tablet: decor above the heading row — FORCE HORIZONTAL */}
+        <div data-aos="fade-in"  data-aos-duration="800">
+
         <div className="hidden sm:flex items-center">
           <SectionDecor className="block" />
         </div>
@@ -29,7 +31,7 @@ export default function ChefStorySection() {
         <div className="sm:hidden flex justify-center">
           <SectionDecor className="block" />
         </div>
-        <div className="mb-12 lg:mb-16 flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
+        <div className="mb-12 lg:mb-16 flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6" >
           <img
             src={cookingBowl}
             alt="Cooking bowl illustration"
@@ -37,17 +39,18 @@ export default function ChefStorySection() {
             loading="eager"
             decoding="async"
             draggable="false"
-          />
+            />
 
           <h2 className="text-[#005931] -tight text-center sm:text-left font-porscha leading-[1.25] text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
             <span className="block">Distance Makes</span>
             <span className="block">the Flavours Clearer</span>
           </h2>
         </div>
+            </div>
 
         {/* Row 1 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16 mb-12 lg:mb-16">
-          <p className="text-[#005931] font-quicksand font-[500] text-center sm:text-left sm:text-lg lg:text-xl leading-7 lg:leading-8 max-w-prose">
+          <p className="text-[#005931] font-quicksand font-[500] text-center sm:text-left sm:text-lg lg:text-xl leading-7 lg:leading-8 max-w-prose" data-aos="fade-right"  data-aos-duration="800">
             It wasn’t until I left Lucknow, first to Aurangabad and then to
             Pune, that I realized how rare and rich my upbringing was. In those
             new cities, I searched for the flavours of home, the smoky softness
@@ -61,12 +64,13 @@ export default function ChefStorySection() {
             loading="lazy"
             decoding="async"
             draggable="false"
+            data-aos="fade-left"  data-aos-duration="800"
           />
         </div>
 
         {/* Row 2 — image a touch smaller */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
-          <p className="text-[#005931] font-quicksand font-[500] text-center sm:text-left sm:text-lg lg:text-xl leading-7 lg:leading-8 max-w-prose lg:order-2">
+          <p className="text-[#005931] font-quicksand font-[500] text-center sm:text-left sm:text-lg lg:text-xl leading-7 lg:leading-8 max-w-prose lg:order-2" data-aos="fade-left"  data-aos-duration="800">
             But it was absence that awakened appreciation. The knowledge passed
             to me quietly, in the daily rhythms of a large family kitchen became
             the soul of Firdaus. A kitchen built not just on recipes, but on
@@ -82,6 +86,7 @@ export default function ChefStorySection() {
               loading="lazy"
               decoding="async"
               draggable="false"
+              data-aos="fade-right"  data-aos-duration="800"
             />
           </div>
         </div>

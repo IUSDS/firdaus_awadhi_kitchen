@@ -37,11 +37,12 @@ export default function ComingSoonSection() {
                   alt="Coming Soon"
                   className="h-[clamp(90px,14vw,200px)] w-[clamp(90px,14vw,200px)] object-contain"
                   draggable="false"
+                  data-aos="zoom-in"  data-aos-duration="900"
                 />
             </div>
 
             {/* Title with padding to clear the stamp */}
-            <div className="relative min-h-[58px] sm:min-h-[70px]">
+            <div className="relative min-h-[58px] sm:min-h-[70px]" data-aos="fade-in"  data-aos-duration="900">
               <h2
                 className="font-porscha text-[clamp(18px,2.2vw,28px)] -wide text-[#FFF2DD] py-4"
                 style={{ paddingLeft: "clamp(110px,17vw,230px)" }}
@@ -54,7 +55,7 @@ export default function ComingSoonSection() {
       </div>
 
       {/* Small description under the banner */}
-      <p className="mx-auto max-w-7xl pl-25 sm:pl-30 md:pl-50 lg:pl-70 xl:pl-80 mt-3 text-[13px] sm:text-sm md:text-base font-quicksand text-[#005931]">
+      <p className="mx-auto max-w-7xl pl-25 sm:pl-30 md:pl-50 lg:pl-70 xl:pl-80 mt-3 text-[13px] sm:text-sm md:text-base font-quicksand text-[#005931]" data-aos="fade-in"  data-aos-duration="900">
         We also provide catering services for big gatherings, bulk orders &amp; kitty party orders.
       </p>
 
@@ -62,7 +63,7 @@ export default function ComingSoonSection() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-16 xl:px-20 mt-10 sm:mt-15">
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 lg:gap-14 lg:divide-x divide-[#00593140]">
           {/* Left: Vegetarian 60% */}
-          <div>
+          <div data-aos="fade-in"  data-aos-duration="900">
             <h3 className="font-porscha text-[#005931] text-[clamp(32px,4.4vw,48px)]">
               Vegetarian Menu
             </h3>
@@ -80,7 +81,7 @@ export default function ComingSoonSection() {
           </div>
 
           {/* Right: Rolls 40% */}
-          <div className="lg:pl-12">
+          <div className="lg:pl-12" data-aos="fade-in"  data-aos-duration="900">
             <h3 className="font-porscha text-[#005931] text-[clamp(32px,4.4vw,48px)]">
               Rolls
             </h3>

@@ -30,7 +30,7 @@ export default function IngredientsSection() {
                   className="mb-2 pl-4 sm:pl-6"
                 />
 
-                <h2 className="pl-4 sm:pl-6 font-porscha leading-[1.25] -tight text-white text-4xl sm:text-5xl lg:text-5xl">
+                <h2 className="pl-4 sm:pl-6 font-porscha leading-[1.25] -tight text-white text-4xl sm:text-5xl lg:text-5xl" data-aos="fade-up" data-aos-duration="800">
                   Ingredients & Sourcing
                 </h2>
 
@@ -44,7 +44,8 @@ export default function IngredientsSection() {
                   style={{
                     fontFamily:
                       "var(--font-quicksand, Quicksand, ui-sans-serif, system-ui)",
-                  }}
+                  }}    
+                  data-aos="fade-in" data-aos-duration="800"
                 >
                   We source our ingredients from trusted local vendors, choosing
                   seasonal produce that reflects the rhythm of the land.
@@ -69,7 +70,7 @@ export default function IngredientsSection() {
         </div>
 
         {/* ===== LowerDiv (50%) ===== */}
-        <div className="relative overflow-hidden lg:row-span-1">
+        <div className="relative overflow-hidden lg:row-span-1 bg-[#005930]">
           <div className="grid h-full w-full grid-cols-1 lg:grid-cols-5">
             {/* ImageLeft (40%) */}
             <div className="lg:col-span-2">

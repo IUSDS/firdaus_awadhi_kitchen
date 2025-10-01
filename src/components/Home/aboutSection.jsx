@@ -16,7 +16,7 @@ export default function AboutSection() {
           <div>
             <h2
               id="about-title"
-              className="text-5xl font-porscha sm:text-6xl lg:text-6xl  -tight text-[#005931]"
+              className="text-5xl font-porscha sm:text-6xl lg:text-6xl  -tight text-[#005931]"  data-aos="fade-right"  data-aos-duration="800"
             >
               About Firdaus <br /> Awadhi Kitchen
             </h2>
@@ -24,7 +24,7 @@ export default function AboutSection() {
 
           <p
             className="text-base sm:text-lg lg:text-xl leading-7 lg:leading-8 text-[#005931] font-[600] font-quicksand"
-            style={{ fontFamily: 'var(--font-quicksand, Quicksand, ui-sans-serif, system-ui)' }}
+            style={{ fontFamily: 'var(--font-quicksand, Quicksand, ui-sans-serif, system-ui)' }}  data-aos="fade-left"  data-aos-duration="800"
           >
             Firdaus Awadhi Kitchen was born from the memory of a food-obsessed
             childhood in Lucknow, where every meal in our joint family was a
@@ -62,15 +62,15 @@ export default function AboutSection() {
               />
             </div>
 
-            <div className="flex items-center justify-center bg-[#005931] text-[#FFF2DD] p-8 md:p-10 text-sm sm:text-base leading-relaxed">
-              <p className="max-w-[38ch] font-quicksand" style={{ fontFamily: 'var(--font-quicksand, Quicksand, ui-sans-serif, system-ui)' }}>
+            <div className="flex items-center justify-center bg-[#005931] text-[#FFF2DD] p-8 md:p-10 text-sm sm:text-base leading-relaxed" >
+              <p data-aos="fade-in"  data-aos-duration="800" className="max-w-[38ch] font-quicksand" style={{ fontFamily: 'var(--font-quicksand, Quicksand, ui-sans-serif, system-ui)' }}>
                 The name Firdaus came long before the restaurant. I always imagined giving it
                 to a child—something soft, timeless, and full of heart.
               </p>
             </div>
 
             <div className="flex items-center justify-center bg-[#005931] text-[#FFF2DD] p-8 md:p-10 text-sm sm:text-base leading-relaxed">
-              <p className="max-w-[40ch] font-quicksand" style={{ fontFamily: 'var(--font-quicksand, Quicksand, ui-sans-serif, system-ui)' }}>
+              <p data-aos="fade-in"  data-aos-duration="800" className="max-w-[40ch] font-quicksand" style={{ fontFamily: 'var(--font-quicksand, Quicksand, ui-sans-serif, system-ui)' }}>
                 In Persian, it means paradise. But for me, Firdaus is not far away. It’s here,
                 in the food, the memory, the care. It’s where taste brings you back to your
                 mother’s kitchen. Where love lives in every layer. Firdaus is home. Firdaus is

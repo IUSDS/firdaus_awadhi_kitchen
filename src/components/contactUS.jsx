@@ -50,7 +50,7 @@ export default function ContactSection() {
           style={{ backgroundImage: `url(${food21})` }}
         >
           {/* Contact subframe — centered by default, right on lg */}
-          <div className="w-full sm:max-w-[520px] bg-[#0B5C3B]/95 text-[#FFF2DD] m-4 sm:m-6 md:m-10 rounded-xl ring-1 ring-[#FFF2DD]/10 shadow-2xl">
+          <div className="w-full sm:max-w-[520px] bg-[#0B5C3B]/95 text-[#FFF2DD] m-4 sm:m-6 md:m-10 rounded-xl ring-1 ring-[#FFF2DD]/10 shadow-2xl"  data-aos="fade-in"  data-aos-duration="800">
             <div className="p-6 sm:p-8 md:p-9">
               <h2 className="font-porscha text-[38px] sm:text-[44px] leading-tight">
                 Contact Us

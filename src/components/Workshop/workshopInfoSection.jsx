@@ -13,7 +13,7 @@ export default function WorkshopInfoSection({
   return (
     <section className="relative bg-[#FFF2DD]">
       {/* Top padding = keep in sync with quotesBanner section */}
-      <div className="mx-auto max-w-6xl px-4 pt-16 md:pt-20 lg:pt-24 text-center">
+      <div className="mx-auto max-w-6xl px-4 pt-16 md:pt-20 lg:pt-24 text-center" data-aos="fade-up" data-aos-duration="800">
         <p className="font-quicksand text-[#005931] text-base md:text-lg">
           Virtual Workshop: Everyday Lucknow Comforts
         </p>
@@ -31,7 +31,7 @@ export default function WorkshopInfoSection({
             <div className="md:col-span-6 px-8 sm:px-22 md:px-10 lg:px-22 py-16 md:py-12 flex items-center justify-center">
               <ul className="w-full max-w-xl md:max-w-none space-y-3 md:space-y-4 text-left font-quicksand text-sm md:text-base lg:text-lg leading-relaxed mx-auto">
                 {points.map((p, i) => (
-                  <li key={i} className="list-disc list-inside">
+                  <li key={i} className="list-disc list-inside" data-aos="fade-right" data-aos-duration="800">
                     {p}
                   </li>
                 ))}

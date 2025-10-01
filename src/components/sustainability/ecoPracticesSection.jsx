@@ -95,8 +95,8 @@ export default function EcoPracticesSection({
       />
 
       {/* Heading container (unchanged) */}
-      <div className="relative z-10 mx-auto max-w-7xl">
-        <h2 className="font-porscha text-[#005931] leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl">
+      <div className="relative z-10 mx-auto max-w-7xl" data-aos="fade-up" data-aos-duration="800">
+        <h2 className="font-porscha text-[#005931] text-5xl sm:text-6xl lg:text-6xl">
           Eco Practices
         </h2>
       </div>
@@ -117,7 +117,7 @@ export default function EcoPracticesSection({
                     {(it.bullets || []).map((b, i) => (
                       <li
                         key={i}
-                        className="font-quicksand font-[500] text-[#005931] text-[clamp(18px,1.4vw,18px)]"
+                        className="font-quicksand font-[500] text-[#005931] text-[clamp(18px,1.4vw,18px)]" data-aos="fade-in" data-aos-duration="800"
                       >
                         {b}
                       </li>
@@ -136,6 +136,7 @@ export default function EcoPracticesSection({
                         loading="lazy"
                         decoding="async"
                         draggable="false"
+                        data-aos="zoom-in" data-aos-duration="800"
                       />
                     ) : (
                       <div className="absolute inset-0 border border-[#005931]/25 rounded-xl bg-transparent" />

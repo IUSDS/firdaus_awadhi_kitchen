@@ -44,13 +44,13 @@ export default function TimelineSection() {
   return (
     <section className="relative isolate overflow-visible px-4 sm:px-6 lg:pb-30 md:pb-24 pb-22">
       {/* Heading — mirrors firdausMemorySection.jsx */}
-      <div className="mx-auto max-w-7xl text-center">
-        <h2 className="font-porscha text-[#005931] leading-[1.15] text-[clamp(42px,5.6vw,58px)]">
+      <div className="mx-auto max-w-7xl text-center" >
+        <h2 className="font-porscha text-[#005931] leading-[1.15] text-[clamp(42px,5.6vw,58px)]"  data-aos="fade-up"  data-aos-duration="800">
           Chef’s Timeline
         </h2>
 
         {/* CONTENT */}
-        <div className="relative mx-auto max-w-7xl mt-10 md:mt-12">
+        <div className="relative mx-auto max-w-7xl mt-10 md:mt-12"  data-aos="fade-in"  data-aos-duration="800">
           {/* --- Desktop / Tablet: horizontal timeline with a single flowing dotted curve --- */}
           <div className="relative hidden md:block">
             {/* Dotted curved connector (responsive via viewBox) */}

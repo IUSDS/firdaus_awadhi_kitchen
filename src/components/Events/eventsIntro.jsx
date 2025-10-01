@@ -24,12 +24,12 @@ export default function EventsIntroSection({
         <figure className="mx-auto w-full max-w-[250px] md:max-w-[320px] lg:max-w-[340px]">
           <div className="relative aspect-square rounded-full">
             <div className="absolute inset-0 rounded-full" />
-            <img src={eventsIntroImg} alt="Firdaus plated dish" className="relative z-[1] h-full w-full rounded-full object-cover" loading="lazy" decoding="async" />
+            <img src={eventsIntroImg} alt="Firdaus plated dish" className="relative z-[1] h-full w-full rounded-full object-cover" loading="lazy" decoding="async" data-aos="zoom-in" data-aos-duration="800" />
           </div>
         </figure>
 
         {/* Right text — sized to visually match image width */}
-        <div className="relative mx-auto lg:mx-0 w-full">
+        <div className="relative mx-auto lg:mx-0 w-full"  data-aos="fade-in" data-aos-duration="800">
           <SectionDecor variant="white" align="start" className="mb-1.5" sizeClass="h-10 w-10" gapClass="" />
           <div className="space-y-2 font-porscha text-[#005931]">
             <p className="text-[clamp(22px,2.6vw,25px)]">
@@ -53,7 +53,7 @@ export default function EventsIntroSection({
               {/* Card image — no ring, tighter, 50% out */}
               <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
                 <div className="w-44 h-42 sm:w-28 sm:h-28 md:w-56 md:h-52 overflow-hidden">
-                  <img src={card.img} alt="" className="h-full w-full object-cover" loading="lazy" decoding="async" />
+                  <img src={card.img} alt="" className="h-full w-full object-cover" loading="lazy" decoding="async"  data-aos="fade-up" data-aos-duration="800" />
                 </div>
               </div>
 

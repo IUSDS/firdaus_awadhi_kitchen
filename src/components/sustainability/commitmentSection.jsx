@@ -40,6 +40,7 @@ export default function CommitmentSection() {
           loading="lazy"
           decoding="async"
           draggable="false"
+          data-aos="zoom-in-left" data-aos-duration="800"
         />
 
       {/* ==== Main Content ==== */}
@@ -51,7 +52,7 @@ export default function CommitmentSection() {
         />
 
         {/* Section Heading (same sizing & spacing as contactBanner.jsx) */}
-        <h2 className="font-porscha text-[#005931] leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl">
+        <h2 className="font-porscha text-[#005931] leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl" data-aos="fade-up" data-aos-duration="800">
           Commitment Statement
         </h2>
 
@@ -62,6 +63,7 @@ export default function CommitmentSection() {
             fontFamily:
               "var(--font-quicksand, Quicksand, ui-sans-serif, system-ui)",
           }}
+          data-aos="fade-in" data-aos-duration="800"
         >
           "Guided by traditional wisdom, we cook mindfully using seasonal, local ingredients, avoiding waste, and honoring every element with care and respect.
         </p>

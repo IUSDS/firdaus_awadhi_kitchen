@@ -51,7 +51,7 @@ export default function SignatureDishes({ items }) {
         </div>
 
         {/* Center heading */}
-        <div className="py-6">
+        <div className="py-6" data-aos="fade-up"  data-aos-duration="800">
           <h2 className="text-center font-porscha leading-[1.54] -wide
                          text-[clamp(34px,3.8vw,56px)]">
             Signature Dishes

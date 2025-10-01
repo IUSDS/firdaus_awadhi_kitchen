@@ -61,7 +61,7 @@ export default function ThirdMenuSection() {
               Half/Full
             </div>
 
-            <ul>
+            <ul data-aos="fade-right"  data-aos-duration="900">
               {items.map((it, idx) => (
                 <li key={idx} className="py-5 first:pt-8">
                   <div className="flex items-baseline gap-3">
@@ -109,6 +109,7 @@ export default function ThirdMenuSection() {
    height={800}   
    className="max-h-[340px] sm:max-h-[380px] lg:max-h-[420px] w-auto object-contain"
    draggable="false"
+   data-aos="zoom-in"  data-aos-duration="900"
  />
           </div>
         </div>

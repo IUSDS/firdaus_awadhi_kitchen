@@ -21,12 +21,14 @@ export default function FirdausMemorySection() {
 
       {/* Headings */}
       <div className="mx-auto max-w-7xl text-center">
+        <div data-aos="fade-up"  data-aos-duration="800">
         <h2 className="font-porscha text-[#005931] leading-[1.15] text-[clamp(42px,5.6vw,58px)]">
           FIRDAUS
         </h2>
         <h3 className="mt-2 font-porscha text-[#005931] leading-[1.15] text-[clamp(26px,5.6vw,46px)]">
           A Kitchen of Memory and Heart
         </h3>
+        </div>
 
         {/* CONTENT */}
         <div className="mt-10 md:mt-12 grid grid-cols-1 md:grid-cols-3 items-center gap-8 md:gap-10 lg:gap-14">
@@ -40,6 +42,7 @@ export default function FirdausMemorySection() {
               loading="lazy"
               decoding="async"
               draggable="false"
+              data-aos="zoom-in"  data-aos-duration="800"
             />
           </div>
 
@@ -57,6 +60,7 @@ export default function FirdausMemorySection() {
               loading="lazy"
               decoding="async"
               draggable="false"
+              data-aos="zoom-in"  data-aos-duration="800"
             />
           </div>
         </div>
