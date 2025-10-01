@@ -23,7 +23,7 @@ export default function ContactBannerSection() {
       <div className="mx-auto max-w-7xl">
         {/* Decor (white variant), same placement/usage as quotesBanner heading */}
         <SectionDecor
-          className="mb-2"
+          className="mb-3"
         />
 
         {/* Heading — same sizing as quotesBanner heading */}
@@ -31,11 +31,11 @@ export default function ContactBannerSection() {
           WE LOVE TO HEAR FROM YOU.
         </h2>
 
-        {/* Long image box (placeholder) */}
+        {/* Long image box (placeholder)
         <div
           aria-hidden="true"
           className="mt-6 rounded-xl md:rounded-2xl bg-[#D9D9D9]/80 shadow-sm h-24 sm:h-28 md:h-32 lg:h-36 w-full"
-        />
+        /> */}
 
         {/* Description — left aligned */}
         <p className="mt-6 max-w-xl font-quicksand text-[clamp(14px,1.25vw,16px)] text-[#005931]/90">

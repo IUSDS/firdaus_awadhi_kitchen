@@ -13,7 +13,7 @@ const Sustainability = () => {
   return (
     <>
       <SEO
-        title="Sustainability - Sourcing, Seasonality & Responsible Craft"
+        title="Sustainability | Sourcing, Seasonality & Responsible Craft"
         description="Firdaus Awadhi Kitchen champions traceable produce, whole-spice traditions and low-waste kitchens—honouring the seasons while preserving authentic Awadhi flavour."
         canonical={`${SITE_URL}${pathname}`}
       />

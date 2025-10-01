@@ -18,7 +18,7 @@ const Chef = () => {
   return (
     <>
       <SEO
-        title="Asma Alvi - The Chef’s Story & Culinary Philosophy"
+        title="Asma Alvi | The Chef’s Story & Culinary Philosophy"
         description="Meet Chef Asma, the heart of our New Delhi restaurant. Discover her heritage recipes, everyday rituals and the philosophy behind our refined Awadhi cuisine."
         canonical={`${SITE_URL}${pathname}`}
       />

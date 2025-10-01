@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact Us - Reservations, Enquiries & Private Dining"
+        title="Contact Us | Reservations, Enquiries & Private Dining"
         description="Reach the concierge team at Firdaus Awadhi Kitchen for reservations, bespoke menus, tasting experiences and collaboration requests."
         canonical={`${SITE_URL}${pathname}`}
       />

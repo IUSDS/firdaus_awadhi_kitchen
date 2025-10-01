@@ -57,9 +57,12 @@ export default function ContactSection() {
               </h2>
 
               <form className="contact-form mt-6 grid grid-cols-1 gap-5" onSubmit={onSubmit}>
+
+                <input type="hidden" name="subject" value="New message from Firdaus Contact Form" />
+                <input type="hidden" name="from_name" value="Firdaus Awadhi Kitchen" />
                 <label htmlFor="cu-name" className="sr-only">Name</label>
                 <input
-                  id="cu-name" type="text" placeholder="Enter your name"
+                  id="cu-name" type="text" placeholder="Enter your name" name="name" autoComplete="name"
                   className="w-full h-11 bg-transparent outline-none border-b border-[#FFF2DD]/40 focus:border-[#FFF2DD]/80 placeholder-[#FFF2DD]/85 font-quicksand"
                   required
                 />
@@ -68,7 +71,7 @@ export default function ContactSection() {
                   <div>
                     <label htmlFor="cu-email" className="sr-only">Email</label>
                     <input
-                      id="cu-email" type="email" placeholder="Email address"
+                      id="cu-email" type="email" placeholder="Email address" name="email" autoComplete="email"
                       className="w-full h-11 bg-transparent outline-none border-b border-[#FFF2DD]/40 focus:border-[#FFF2DD]/80 placeholder-[#FFF2DD]/85 font-quicksand"
                       required
                     />
@@ -76,7 +79,7 @@ export default function ContactSection() {
                   <div>
                     <label htmlFor="cu-phone" className="sr-only">Phone</label>
                     <input
-                      id="cu-phone" type="tel" placeholder="Phone number"
+                      id="cu-phone" type="tel" placeholder="Phone number"  name="phone" inputMode="tel" pattern="^[0-9+() -]{7,}$"
                       className="w-full h-11 bg-transparent outline-none border-b border-[#FFF2DD]/40 focus:border-[#FFF2DD]/80 placeholder-[#FFF2DD]/85 font-quicksand"
                       required
                     />
@@ -86,7 +89,7 @@ export default function ContactSection() {
                 <div>
                   <label htmlFor="cu-message" className="sr-only">Message</label>
                   <textarea
-                    id="cu-message" rows={4} placeholder="Message"
+                    id="cu-message" rows={4} placeholder="Message" name="message"
                     className="w-full resize-none bg-transparent outline-none border-b border-[#FFF2DD]/40 focus:border-[#FFF2DD]/80 placeholder-[#FFF2DD]/85 pt-2 pb-3  font-quicksand"
                     required
                   />

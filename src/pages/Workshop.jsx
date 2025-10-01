@@ -14,7 +14,7 @@ const Workshop = () => {
   return (
     <>
       <SEO
-        title="Firdaus Workshops - Awadhi Workshops & Culinary Masterclasses"
+        title="Firdaus Workshops | Awadhi Workshops & Culinary Masterclasses"
         description="Hands-on sessions in dum cooking, spice tempering and kebab craft—learn the techniques that shape the signature flavours of Firdaus Awadhi Kitchen"
         canonical={`${SITE_URL}${pathname}`}
       />

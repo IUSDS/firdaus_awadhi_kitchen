@@ -13,7 +13,7 @@ const Events = () => {
   return (
     <>
       <SEO
-        title="Firdaus - Private Dining & Bespoke Awadhi Experiences"
+        title="Firdaus | Private Dining & Bespoke Awadhi Experiences"
         description="Host intimate celebrations and corporate gatherings in New Delhi with curated Awadhi menus, bespoke décor and concierge-level planning at our fine dining restaurant."
         canonical={`${SITE_URL}${pathname}`}
       />

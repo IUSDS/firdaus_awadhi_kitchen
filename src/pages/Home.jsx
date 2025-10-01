@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Heritage Awadhi Cuisine, Elevated"
+        title="Firdaus Awadhi Kitchen | Heritage Cuisine"
         description="Firdaus Awadhi Kitchen celebrates slow-fire dum, melt-in-the-mouth kebabs and refined seasonal plates—heritage technique, balanced spice and quiet elegance in every course."
         canonical={`${SITE_URL}${pathname}`}
       />

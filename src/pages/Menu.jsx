@@ -16,7 +16,7 @@ const Menu = () => {
   return (
     <>
       <SEO
-        title="Awadhi Menu - Kebabs, Dum Biryani & Seasonal Plates"
+        title="Awadhi Menu | Kebabs, Dum Biryani & Seasonal Plates"
         description="Explore kebabs, dum biryani, kormas and artisanal breads—signature Awadhi preparations with layered spices, clarified butter and slow cooking at Firdaus Awadhi Kitchen."
         canonical={`${SITE_URL}${pathname}`}
       />
