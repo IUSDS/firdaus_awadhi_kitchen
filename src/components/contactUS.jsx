@@ -3,11 +3,46 @@ import React from "react";
 import { food21 } from "../assets/images";
 
 export default function ContactSection() {
+  const [result, setResult] = React.useState("");
+    const [submitting, setSubmitting] = React.useState(false);
+
+      const onSubmit = async (event) => {
+  event.preventDefault();
+
+  setSubmitting(true);
+  try {
+    setResult("Sending…");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "5bde4d34-5cc4-4bff-9da4-67ee92d58d51");
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await res.json();
+    if (data.success) {
+      setResult("Form submitted successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message || "Submission failed");
+    }
+  } catch (e) {
+    console.error(e);
+    setResult("Network error. Please try again.");
+  } finally {
+    setSubmitting(false);
+  }
+};
+
   return (
     <section
       id="contact"
       className="relative isolate bg-transparent px-4 sm:px-6 pt-22 md:pt-24 lg:pt-30 pb-20"
     >
+      <input type="hidden" name="subject" value="New message from Firdaus Contact Form" />
       <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6 lg:px-14">
         {/* bg image wrapper */}
         <div
@@ -21,7 +56,7 @@ export default function ContactSection() {
                 Contact Us
               </h2>
 
-              <form className="mt-6 grid grid-cols-1 gap-5" onSubmit={(e) => e.preventDefault()}>
+              <form className="contact-form mt-6 grid grid-cols-1 gap-5" onSubmit={onSubmit}>
                 <label htmlFor="cu-name" className="sr-only">Name</label>
                 <input
                   id="cu-name" type="text" placeholder="Enter your name"
@@ -43,6 +78,7 @@ export default function ContactSection() {
                     <input
                       id="cu-phone" type="tel" placeholder="Phone number"
                       className="w-full h-11 bg-transparent outline-none border-b border-[#FFF2DD]/40 focus:border-[#FFF2DD]/80 placeholder-[#FFF2DD]/85 font-quicksand"
+                      required
                     />
                   </div>
                 </div>
@@ -51,7 +87,7 @@ export default function ContactSection() {
                   <label htmlFor="cu-message" className="sr-only">Message</label>
                   <textarea
                     id="cu-message" rows={4} placeholder="Message"
-                    className="w-full bg-transparent outline-none border-b border-[#FFF2DD]/40 focus:border-[#FFF2DD]/80 placeholder-[#FFF2DD]/85 pt-2 pb-3 resize-y font-quicksand"
+                    className="w-full resize-none bg-transparent outline-none border-b border-[#FFF2DD]/40 focus:border-[#FFF2DD]/80 placeholder-[#FFF2DD]/85 pt-2 pb-3  font-quicksand"
                     required
                   />
                 </div>
@@ -59,12 +95,14 @@ export default function ContactSection() {
                 <div className="pt-2">
                   <button
                     type="submit"
+                    disabled={submitting}
                     className="inline-flex items-center justify-center px-6 h-10 rounded-md bg-[#005931] text-[#FFF2DD] ring-1 ring-[#FFF2DD]/25 hover:ring-[#FFF2DD]/40 transition active:scale-[.98] text-sm font-quicksand"
                   >
-                    SUBMIT
+                    { submitting ? "Sending..." : "Submit" }
                   </button>
                 </div>
               </form>
+              <p className="mt-2 text-sm opacity-80" aria-live="polite">{result}</p>
             </div>
           </div>
           {/* /Contact subframe */}
