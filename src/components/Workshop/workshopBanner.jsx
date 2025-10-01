@@ -44,7 +44,7 @@ export default function WorkshopBannerSection() {
 
         {/* Description */}
         <p className="mt-5 max-w-2xl mx-auto font-porscha text-[#005931]  text-[clamp(20px,2.4vw,32px)]">
-          Each Workshop Is A Blend Of <br /> Technique, Story, And Sensory Exploration.
+          Each workshop is a blend of technique, story, and sensory exploration.
         </p>
       </div>
 

@@ -76,16 +76,16 @@ export default function Testimonials({
   avatars = [],
   reviews = [
     {
-      quote: "I finally understood my grandmother’s biryani notes",
-      author: "~ Meera",
+      quote: "The Kababs here are to die for, have had some of my best meals here. The Biryani is great, and most of all the hospitality of the place is unmatched, always making you wanna come back and have more.",
+      author: "~ Pravek",
     },
     {
-      quote: "The keema tips changed how I cook at home",
-      author: "~ Samir R.",
+      quote: "Tried the Bhuna Gosht and the Mutton Biryani and absolutely loved it. Authentic purana lucknow taste in every bite. Will 100% recommend it to everybody.",
+      author: "~ Naaz Z.",
     },
     {
-      quote: "The food here is delicious, especially their Mango pickle",
-      author: "~ Hasnaat",
+      quote: "The food here is wonderfully flavorful and authentic, making for a truly delicious meal. Their mango pickle is a standout, adding the perfect tangy and spicy kick that elevates every dish.",
+      author: "~ Hasnaat S.",
     },
   ],
 }) {

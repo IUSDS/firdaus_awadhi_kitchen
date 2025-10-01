@@ -33,10 +33,10 @@ export default function EventsIntroSection({
           <SectionDecor variant="white" align="start" className="mb-1.5" sizeClass="h-10 w-10" gapClass="" />
           <div className="space-y-2 font-porscha text-[#005931]">
             <p className="text-[clamp(22px,2.6vw,25px)]">
-              Every <span className="font-semibold">Firdaus event</span> is a <span className="font-semibold">journey</span> into the <span className="font-semibold">heart</span> of Awadhi hospitality.
+              Every Firdaus event is a journey into the heart of Awadhi hospitality.
             </p>
             <p className="text-[clamp(22px,2.1vw,25px)]">
-              From <span className="font-semibold">Eid dinners</span> to seasonal tastings, we <span className="font-semibold">create immersive experiences</span> that celebrate <span className="font-semibold">flavor</span>, <span className="font-semibold">community</span>, and <span className="font-semibold">tradition</span>.
+              From Eid dinners to seasonal tastings, we create immersive experiences that celebrate flavor, community, and tradition.
             </p>
           </div>
         </div>
@@ -60,8 +60,8 @@ export default function EventsIntroSection({
               {/* Bottom content */}
               <div className="w-full text-center mt-1">
                 <h3 className="font-porscha text-[clamp(20px,1.9vw,21px)]">{card.title}</h3>
-                {card.meta && <p className="mt-2 text-[14px]/5 opacity-80">{card.meta}</p>}
-                {card.blurb && <p className="mt-2 text-[clamp(14.5px,1.6vw,14.5px)] opacity-90">{card.blurb}</p>}
+                {card.meta && <p className="mt-2 font-quicksand text-[14px]/5 opacity-80">{card.meta}</p>}
+                {card.blurb && <p className="font-quicksand mt-2 text-[clamp(14.5px,1.6vw,14.5px)] opacity-90">{card.blurb}</p>}
                 <a
                   href="/contact"
                   type="button"

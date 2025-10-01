@@ -94,7 +94,7 @@ export default function Navbar() {
             <div className="flex items-center gap-2 justify-self-end col-start-3">
               {/* Desktop CTA only (>= 868px) */}
               <a
-                href="#book"
+                href="/contact#contacform"
                 className="hidden min-[868px]:inline-flex rounded-full bg-[#005931] md:text-[10px] lg:text-[12px] -[0.20em] text-[#FFF2DD] py-3 px-6"
               >
                 BOOK NOW

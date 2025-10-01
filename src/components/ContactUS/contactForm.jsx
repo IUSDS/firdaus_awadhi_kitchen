@@ -78,7 +78,7 @@ export default function ContactForm() {
               <h3 className={`${headingClass} mt-10`}>Follow Us</h3>
               <div className="mt-4 flex items-center gap-3">
                 {/* Social icons inside #FFF2DD circle with #005930 icon color */}
-                <SocialCircle href="#" label="Facebook">
+                <SocialCircle href="https://www.facebook.com/firdausawadhkitchen/" label="Facebook">
                   {/* Minimal FB mark */}
                   <svg
                     viewBox="0 0 24 24"
@@ -88,7 +88,7 @@ export default function ContactForm() {
                     <path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H8v3h3v7h3v-7h2.6l.4-3H14V9z" />
                   </svg>
                 </SocialCircle>
-                <SocialCircle href="#" label="Instagram">
+                <SocialCircle href="https://www.instagram.com/firdausawadhikitchen/" label="Instagram">
                   {/* Minimal IG mark */}
                   <svg
                     viewBox="0 0 24 24"
@@ -98,17 +98,7 @@ export default function ContactForm() {
                     <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm5 3.5a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11zm0 3a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5zm5.25-3.25a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5z" />
                   </svg>
                 </SocialCircle>
-                <SocialCircle href="#" label="YouTube">
-                  {/* Minimal YT mark */}
-                  <svg
-                    viewBox="0 0 24 24"
-                    className="h-4 w-4"
-                    fill="currentColor"
-                  >
-                    <path d="M22 8.6v6.8c0 1.3-1 2.4-2.2 2.6C17.6 18.4 12 18.4 12 18.4s-5.6 0-7.8-.4A2.6 2.6 0 0 1 2 15.4V8.6c0-1.3 1-2.4 2.2-2.6C6.4 5.6 12 5.6 12 5.6s5.6 0 7.8.4A2.6 2.6 0 0 1 22 8.6zM10 9.5v4.9l4-2.4-4-2.5z" />
-                  </svg>
-                </SocialCircle>
-                <SocialCircle href="#" label="LinkedIn">
+                <SocialCircle href="https://www.linkedin.com/company/firdaus-awadhi-kitchen" label="LinkedIn">
                   {/* Minimal IN mark */}
                   <svg
                     viewBox="0 0 24 24"

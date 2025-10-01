@@ -6,11 +6,11 @@ export default function SignatureDishes({ items }) {
   const DISHES = useMemo(
     () =>
       items ?? [
-        { title: "Boti Kebab", src: food2 },
-        { title: "Chicken/Mutton Yakhni Biryani", src: food1 },
-        { title: "Mutton Galawat", src: food3 },
+        { title: "Shami Kebab", src: food2 },
+        { title: "Mutton Yakhni Biryani", src: food1 },
+        { title: "Khaliya Salan", src: food3 },
         { title: "Seasonal Awadhi Thali", src: food13 },
-        { title: "Mango Biryani Delight", src: food4 },
+        { title: "Bhuna Mutton", src: food4 },
       ],
     [items]
   );
