@@ -11,7 +11,7 @@ import SustainabilitySection from "../components/Home/sustainabilitySection";
 import Testimonials from "../components/testimonials";
 import NewsletterSection from "../components/newsletterSection";
 import { useLocation } from "react-router-dom";
-
+import EntryOverlay from "../components/entryOverlay";
 
 const Home = () => {
   const { pathname } = useLocation();
@@ -24,6 +24,14 @@ const Home = () => {
       />
 
       <div className="">
+        <EntryOverlay
+          text="FIRDAUS"
+          heroSelector="#introTitle"
+          coverNavbar={true}
+          hold={220}
+          oncePerSession={true} // ✅ prevents replay when navigating back to Home in same tab
+        />
+
         <IntroHome />
         <MeetTheChefBanner />
         <AboutSection />

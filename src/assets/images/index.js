@@ -1,4 +1,4 @@
-import mandala from "./mandala-circles.png"
+import mandala from "./mandala-circles.webp"
 import fort from "./fort.webp"
 import rootsBG from "./rootsBG.webp"
 
@@ -58,8 +58,8 @@ import philosophyDivider from "./philosophyDivider.webp"
 
 import timelineBadge from "./timelineSVG.webp"
 
-import asmaimg from "./asma.jpg"
-import asmahome from "./asmahome.jpg"
+import asmaimg from "./asma.webp"
+import asmahome from "./asmahome.webp"
 
 export{
     mandala,
