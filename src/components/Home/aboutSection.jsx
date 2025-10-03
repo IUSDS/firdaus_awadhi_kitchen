@@ -23,7 +23,7 @@ export default function AboutSection() {
           </div>
 
           <p
-            className="text-base sm:text-lg lg:text-xl leading-7 lg:leading-8 text-[#005931] font-[600] font-quicksand"
+            className="text-base sm:text-lg lg:text-xl leading-7 lg:leading-8 text-[#005931]  font-quicksand"
             style={{ fontFamily: 'var(--font-quicksand, Quicksand, ui-sans-serif, system-ui)' }}  data-aos="fade-left"  data-aos-duration="800"
           >
             Firdaus Awadhi Kitchen was born from the memory of a food-obsessed

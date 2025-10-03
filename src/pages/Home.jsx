@@ -29,7 +29,7 @@ const Home = () => {
           heroSelector="#introTitle"
           coverNavbar={true}
           hold={220}
-          oncePerSession={true} // ✅ prevents replay when navigating back to Home in same tab
+          oncePerSession={false} // ✅ prevents replay when navigating back to Home in same tab
         />
 
         <IntroHome />

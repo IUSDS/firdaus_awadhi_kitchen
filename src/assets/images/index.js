@@ -116,3 +116,16 @@ export{
     asmaimg
 }
 
+{/* <img
+        ref={fortRef}
+        src={fort}
+        alt=""
+        className="
+      pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2
+      w-[120vw] max-w-none md:w-[100vw] lg:w-[120vw] 
+      lg:max-h-[56vh] 
+      object-contain
+      z-[50]                               
+    "
+        fetchPriority="high"
+      /> */}

@@ -119,7 +119,7 @@ export default function CommunitySection({
               >
                 {/* Description (left) */}
                 <div className="pr-8 max-w-[64%] px-3 lg:px-4">
-                  <p className="font-quicksand text-lg sm:text-xl lg:text-2xl leading-7 sm:leading-8 lg:leading-9 font-[600]" data-aos="fade-in" data-aos-duration="800">
+                  <p className="font-quicksand text-lg sm:text-xl lg:text-2xl leading-7 sm:leading-8 lg:leading-9 font-bold" data-aos="fade-in" data-aos-duration="800">
                     {it.desc}
                   </p>
                 </div>
