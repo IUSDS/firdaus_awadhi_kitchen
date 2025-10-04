@@ -5,7 +5,7 @@ import SectionDecor from "../sectionDecor";
 
 export default function AboutSection() {
   return (
-    <section className="relative px-4 sm:px-6 lg:px-14 lg:pt-30 md:pt-24 pt-22 isolate bg-[#F5EBDC] text-[#16321F]">
+    <section className="relative px-4 sm:px-6 lg:px-14 lg:pt-30 md:pt-24 pt-22 isolate bg-[#FFF2DD] text-[#005931]">
       {/* Top container */}
       <div className="mx-auto max-w-7xl ">
         {/* Decorative strip (separate row, left-aligned) */}

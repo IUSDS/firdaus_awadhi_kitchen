@@ -37,7 +37,7 @@ export default function SignatureDishes({ items }) {
   );
 
   return (
-    <section id="signature-dishes" className="w-full lg:pt-30 md:pt-24 pt-22 bg-[#FFF6EA] text-[#113821]">
+    <section id="signature-dishes" className="w-full lg:pt-30 md:pt-24 pt-22 bg-[#FFF2DD] text-[#005931]">
       {/* ===== Banner with ornament strips (same pattern as MeetTheChef) ===== */}
       <div className="relative bg-[#005931] text-[#FFF2DD]">
         {/* Top strip */}
