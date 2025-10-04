@@ -36,7 +36,7 @@ import menuTwo from "./menuTwo.webp"
 import menuThree from "./menuThree.webp"
 import menuFour from "./menuFour.webp"
 
-import comingSoonIMG from "./comingSoonIMG.webp"
+import comingSoonIMG from "./comingSoonImg.webp"
 import workshopHero from "./workshopHero.webp"
 import circularMandala from "./circularMandala.webp"
 
