@@ -29,7 +29,6 @@ import tiltedRimg from "./tiltedRimg.webp"
 import menuHero from "./menuHero.webp"
 import contactHero from "./contactHero.webp"
 import eventsHero from "./eventsHero.webp"
-import chefHero from "./chefHero.webp"
 
 import menuOne from "./menuOne.webp"
 import menuTwo from "./menuTwo.webp"
@@ -94,7 +93,6 @@ export{
     menuFour,
     comingSoonIMG,
     workshopHero,
-    chefHero,
     circularMandala,
     contactHero,
     eventsHero,

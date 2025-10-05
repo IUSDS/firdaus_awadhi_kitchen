@@ -1,4 +1,6 @@
 // src/seo/SEO.jsx
+import { Helmet } from "react-helmet";
+
 import {
   SITE_NAME,
   SITE_URL,
@@ -30,29 +32,20 @@ export function SEO({
   const canon = canonical || inferred;
   const desc = clamp160(description);
 
-  return (
-    <>
-      {/* Title (optional) */}
-      {includeTitle && <title>{fullTitle}</title>}
-      {/* Meta description (optional) */}
-      {includeDescription && <meta name="description" content={desc} />}
-
-      {/* Canonical */}
-      {canon && <link rel="canonical" href={canon} />}
-
-      {/* Robots */}
-      <meta name="robots" content={noIndex ? "noindex, nofollow" : "index, follow"} />
-
-      {/* Open Graph */}
-      <meta property="og:site_name" content={SITE_NAME} />
-      {includeTitle && <meta property="og:title" content={fullTitle} />}
-      {includeDescription && <meta property="og:description" content={desc} />}
-      {canon && <meta property="og:url" content={canon} />}
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary" />
-      {includeTitle && <meta name="twitter:title" content={fullTitle} />}
-      {includeDescription && <meta name="twitter:description" content={desc} />}
-    </>
-  );
+   return (
+     <Helmet prioritizeSeoTags>
+       {includeTitle && <title>{fullTitle}</title>}
+       {includeDescription && <meta name="description" content={desc} />}
+       {canon && <link rel="canonical" href={canon} />}
+       <meta name="robots" content={noIndex ? "noindex, nofollow" : "index, follow"} />
+       <meta property="og:type" content="website" />
+       <meta property="og:site_name" content={SITE_NAME} />
+       {includeTitle && <meta property="og:title" content={fullTitle} />}
+       {includeDescription && <meta property="og:description" content={desc} />}
+       {canon && <meta property="og:url" content={canon} />}
+       <meta name="twitter:card" content="summary" />
+       {includeTitle && <meta name="twitter:title" content={fullTitle} />}
+       {includeDescription && <meta name="twitter:description" content={desc} />}
+     </Helmet>
+   );
 }

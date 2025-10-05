@@ -1,4 +1,4 @@
-import { asmaimg, chefHero } from "../assets/images";
+import { asmaimg,} from "../assets/images";
 import CardGallerySection from "../components/Chef/cardsGallery";
 import ChefHistory from "../components/Chef/chefHistory";
 import ChefStorySection from "../components/Chef/chefStorySection";

@@ -19,7 +19,14 @@ const Workshop = () => {
         canonical={`${SITE_URL}${pathname}`}
       />
       <div className="">
-        <HeroSection image={workshopHero} title="WORKSHOPS" focus="center" />
+        <HeroSection
+          image={workshopHero}
+          title="WORKSHOPS"
+          headingAlign="center"
+          imgScale={1}
+          offsetX={-20}
+          offsetY={-50}
+        />
         <WorkshopBannerSection />
         <UpcomingWorkshopSection />
         <WorkshopInfoSection />

@@ -23,7 +23,7 @@ const Events = () => {
           title="EVENTS"
           focus="center"
           imgScale={1}
-          offsetX={-2}
+          offsetX={1}
           offsetY={-50}
         />
         <EventsIntroSection />

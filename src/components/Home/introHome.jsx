@@ -60,8 +60,8 @@ export default function IntroHome() {
         className="
           relative z-10
           mx-auto max-w-6xl px-6
-          pt-26 sm:pt-30 lg:pt-30
-          pb-56 sm:pb-64
+          pt-44 sm:pt-30 lg:pt-30
+          pb-56 sm:pb-64 md:pb-60
           text-center
         "
       >

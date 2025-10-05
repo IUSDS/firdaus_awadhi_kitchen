@@ -1,39 +1,7 @@
+// src/components/Hero.jsx
 import React from "react";
-import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
 
-// ---------- helpers ----------
-const clamp = (v, lo, hi) => Math.min(Math.max(v, lo), hi);
-
-// parse "50% 40%" -> [50, 40]
-function parseFocusPair(focusStr = "50% 50%") {
-  const [x = "50%", y = "50%"] = String(focusStr).trim().split(/\s+/);
-  const toNum = (s) => {
-    if (typeof s === "number") return s;
-    const n = parseFloat(String(s).replace("%", ""));
-    return Number.isFinite(n) ? n : 50;
-  };
-  return [toNum(x), toNum(y)];
-}
-
-// normalize offset input: 10, "10", "10%" -> number 10
-function normOffset(v) {
-  if (typeof v === "number") return v;
-  if (typeof v === "string") {
-    const n = parseFloat(v.replace("%", ""));
-    return Number.isFinite(n) ? n : 0;
-  }
-  return 0;
-}
-
-/**
- * HeroSection — full‑bleed hero with controllable zoom + pan that never spills outside.
- *
- * Props of interest:
- * - imgScale (number): zoom (e.g., 1.2)
- * - offsetX / offsetY (number|string): pan in percent; accepts 10 or "10%" (right/down positive)
- * - focus (string): base object-position like "50% 50%"; offsets apply on top
- * - constrain (bool): clamp pan so edges don't show (default true)
- */
 export default function HeroSection({
   image,
   title,
@@ -45,48 +13,74 @@ export default function HeroSection({
   tint = true,
   tintOpacity = 0.4,
   tintColor = "#000000",
-  headingAlign = "center", // "center" | "left" | "right"
-  headingVAlign = "center", // "center" | "top" | "bottom"
-
+  headingAlign = "center",
+  headingVAlign = "center",
   // pan + scale controls
   imgScale = 1,
   offsetX = 0,
   offsetY = 0,
   constrain = true,
 }) {
-  // layout classes for heading
+  // --- helpers ---
+  const parseFocus = (val) => {
+    if (typeof val === "string") {
+      const parts = val.trim().split(/\s+/);
+      const [x = "50%", y = "50%"] = parts;
+      const toNum = (p) =>
+        typeof p === "string" && p.endsWith("%")
+          ? Number(p.slice(0, -1))
+          : Number(p);
+      return [toNum(x), toNum(y)];
+    }
+    if (Array.isArray(val)) return [Number(val[0]) || 50, Number(val[1]) || 50];
+    return [50, 50];
+  };
+
+  const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
+
+  const [baseX, baseY] = parseFocus(focus);
+  let finalX = baseX + (Number(offsetX) || 0);
+  let finalY = baseY + (Number(offsetY) || 0);
+  if (constrain) {
+    finalX = clamp(finalX, 0, 100);
+    finalY = clamp(finalY, 0, 100);
+  }
+
+  // heading alignment classes
+  const sidePad = "px-6 sm:px-8 md:px-12";
   const hJustify =
-    headingAlign === "left" ? "justify-start" :
-    headingAlign === "right" ? "justify-end" : "justify-center";
-  const vItems =
-    headingVAlign === "top" ? "items-start" :
-    headingVAlign === "bottom" ? "items-end" : "items-center";
+    headingAlign === "left"
+      ? `justify-start ${sidePad}`
+      : headingAlign === "right"
+      ? `justify-end ${sidePad}`
+      : `justify-center ${sidePad}`;
   const textAlign =
-    headingAlign === "left" ? "text-left" :
-    headingAlign === "right" ? "text-right" : "text-center";
-  const sidePad =
-    headingAlign === "left" ? "pl-6 sm:pl-8 lg:pl-12" :
-    headingAlign === "right" ? "pr-6 sm:pr-8 lg:pr-12" : "";
-
-  // compute final object-position after offsets
-  const [baseX, baseY] = parseFocusPair(focus);
-  const userX = normOffset(offsetX);
-  const userY = normOffset(offsetY);
-  const rawX = baseX + userX;
-  const rawY = baseY + userY;
-  const finalX = constrain ? clamp(rawX, 0, 100) : rawX;
-  const finalY = constrain ? clamp(rawY, 0, 100) : rawY;
-
-  // tiny safety bump if panned with no scale, to minimize edge risk on extreme positions
-  const effectiveScale = imgScale === 1 && (userX || userY) ? 1.02 : imgScale;
+    headingAlign === "left"
+      ? "text-left"
+      : headingAlign === "right"
+      ? "text-right"
+      : "text-center";
+  const vItems =
+    headingVAlign === "top"
+      ? "items-start"
+      : headingVAlign === "bottom"
+      ? "items-end"
+      : "items-center";
 
   return (
     <section
       className={`relative w-full z-0 ${className}`}
-      style={behindNavbar ? { marginTop: "calc(var(--nav-h, 7rem) * -1)" } : undefined}
+      style={behindNavbar ? { marginTop: "calc(var(--nav-h, 8rem) * -1)" } : undefined}
     >
+      {/* Preload hero to start fetching before React paints */}
+      {priority && (
+        <Helmet>
+          <link rel="preload" as="image" href={image} fetchpriority="high" />
+        </Helmet>
+      )}
+
       <div className={`relative w-full overflow-hidden ${heightClasses}`}>
-        {/* Image (object-position does the actual pan; transform applies scale) */}
+        {/* Hero image */}
         <img
           src={image}
           alt={title}
@@ -94,12 +88,13 @@ export default function HeroSection({
           style={{
             objectPosition: `${finalX}% ${finalY}%`,
             transformOrigin: "center center",
-            transform: `scale(${effectiveScale})`,
+            transform: `scale(${imgScale})`,
             transition: "transform 300ms ease, object-position 200ms ease",
           }}
           draggable="false"
           loading={priority ? "eager" : "lazy"}
           fetchPriority={priority ? "high" : "auto"}
+          decoding="sync"
         />
 
         {/* Tint overlay */}
@@ -107,12 +102,20 @@ export default function HeroSection({
           <div
             aria-hidden="true"
             className="absolute inset-0 pointer-events-none"
-            style={{ backgroundColor: tintColor, opacity: Math.max(0, Math.min(1, tintOpacity)), transition: "opacity 200ms ease" }}
+            style={{
+              backgroundColor: tintColor,
+              opacity: Math.max(0, Math.min(1, tintOpacity)),
+              transition: "opacity 200ms ease",
+            }}
           />
         )}
 
         {/* Heading layer */}
-        <div className={`absolute inset-0 flex ${hJustify} ${vItems} ${sidePad}`} data-aos="fade-up" data-aos-duration="800">
+        <div
+          className={`absolute inset-0 flex ${hJustify} ${vItems}`}
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <h1 className={`font-porsha text-5xl sm:text-7xl lg:text-8xl text-[#FFF2DD] ${textAlign}`}>
             {title}
           </h1>
@@ -121,22 +124,3 @@ export default function HeroSection({
     </section>
   );
 }
-
-HeroSection.propTypes = {
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  focus: PropTypes.string,
-  behindNavbar: PropTypes.bool,
-  heightClasses: PropTypes.string,
-  className: PropTypes.string,
-  priority: PropTypes.bool,
-  tint: PropTypes.bool,
-  tintOpacity: PropTypes.number,
-  tintColor: PropTypes.string,
-  headingAlign: PropTypes.oneOf(["center", "left", "right"]),
-  headingVAlign: PropTypes.oneOf(["center", "top", "bottom"]),
-  imgScale: PropTypes.number,
-  offsetX: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  offsetY: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  constrain: PropTypes.bool,
-};
