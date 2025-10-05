@@ -173,7 +173,7 @@ export default function Navbar() {
             <a
               href="/contact"
               onClick={() => setOpen(false)}
-              className="inline-flex font-quicksand rounded-full bg-white/10 hover:bg-[#FFF2DD] hover:text-[#005931] transition duration-500 px-28 py-5 text-[15px] font-semibold text-[#FFF2DD]"
+               className="inline-flex whitespace-nowrap font-quicksand rounded-full bg-white/10 hover:bg-[#FFF2DD] hover:text-[#005931] transition duration-500 px-28 py-5 text-[15px] font-semibold text-[#FFF2DD]"
             >
               BOOK NOW
             </a>

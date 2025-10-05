@@ -24,7 +24,7 @@ const Events = () => {
           focus="center"
           imgScale={1}
           offsetX={1}
-          offsetY={-50}
+          offsetY={40}
         />
         <EventsIntroSection />
         <EventHighlights />

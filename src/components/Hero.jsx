@@ -7,7 +7,7 @@ export default function HeroSection({
   title,
   focus = "50% 50%",
   behindNavbar = true,
-  heightClasses = "h-[100vh]",
+  heightClasses = "h-[108vh]",
   className = "",
   priority = true,
   tint = true,

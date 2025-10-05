@@ -25,7 +25,7 @@ const Workshop = () => {
           headingAlign="center"
           imgScale={1}
           offsetX={-20}
-          offsetY={-50}
+          offsetY={-80}
         />
         <WorkshopBannerSection />
         <UpcomingWorkshopSection />
