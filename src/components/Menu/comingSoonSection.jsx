@@ -35,8 +35,8 @@ export default function ComingSoonSection() {
                 <img
                   src={comingSoonIMG}
                   alt="Coming Soon"
-                  className="h-[clamp(90px,14vw,200px)] w-[clamp(90px,14vw,200px)] object-contain"
-                  draggable="false"
+                  className="h-[clamp(120px,14vw,200px)] w-[clamp(120px,14vw,200px)] object-contain"
+                  draggable="true"
                   data-aos="zoom-in"  data-aos-duration="900"
                 />
             </div>
@@ -45,7 +45,7 @@ export default function ComingSoonSection() {
             <div className="relative min-h-[58px] sm:min-h-[70px]" data-aos="fade-in"  data-aos-duration="900">
               <h2
                 className="font-porsha text-[clamp(18px,2.2vw,28px)] -wide text-[#FFF2DD] py-4"
-                style={{ paddingLeft: "clamp(110px,17vw,230px)" }}
+                style={{ paddingLeft: "clamp(120px,17vw,230px)" }}
               >
                 Vegetarian, Rolls &amp; Combo Menu
               </h2>
@@ -55,7 +55,7 @@ export default function ComingSoonSection() {
       </div>
 
       {/* Small description under the banner */}
-      <p className="mx-auto max-w-7xl pl-25 sm:pl-30 md:pl-50 lg:pl-70 xl:pl-80 mt-3 text-[13px] sm:text-sm md:text-base font-quicksand text-[#005931]" data-aos="fade-in"  data-aos-duration="900">
+      <p className="mx-auto max-w-7xl pl-26 sm:pl-30 md:pl-50 lg:pl-70 xl:pl-80 mt-3 text-[13px] sm:text-sm md:text-base font-quicksand text-[#005931]" data-aos="fade-in"  data-aos-duration="900">
         We also provide catering services for big gatherings, bulk orders &amp; kitty party orders.
       </p>
 
