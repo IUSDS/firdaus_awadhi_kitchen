@@ -5,7 +5,7 @@ export default function ContactForm() {
   const [result, setResult] = React.useState("");
   const [submitting, setSubmitting] = React.useState(false);
   const headingClass =
-    "font-porscha text-[#FFF2DD] text-[44px] leading-[1.06] sm:text-[56px] lg:text-[72px] lg:leading-[1.04]";
+    "font-porsha text-[#FFF2DD] text-[44px] leading-[1.06] sm:text-[56px] lg:text-[72px] lg:leading-[1.04]";
   const labelClass = "sr-only";
   const inputBase =
     "w-full rounded-md border border-[#FFF2DD]/10 bg-white/5 px-4 py-5 ";

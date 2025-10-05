@@ -22,10 +22,10 @@ export default function FirdausMemorySection() {
       {/* Headings */}
       <div className="mx-auto max-w-7xl text-center">
         <div data-aos="fade-up"  data-aos-duration="800">
-        <h2 className="font-porscha text-[#005931] leading-[1.15] text-[clamp(42px,5.6vw,58px)]">
+        <h2 className="font-porsha text-[#005931] leading-[1.15] text-[clamp(42px,5.6vw,58px)]">
           FIRDAUS
         </h2>
-        <h3 className="mt-2 font-porscha text-[#005931] leading-[1.15] text-[clamp(26px,5.6vw,46px)]">
+        <h3 className="mt-2 font-porsha text-[#005931] leading-[1.15] text-[clamp(26px,5.6vw,46px)]">
           A Kitchen of Memory and Heart
         </h3>
         </div>

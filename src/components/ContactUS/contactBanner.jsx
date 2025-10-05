@@ -27,7 +27,7 @@ export default function ContactBannerSection() {
         />
 
         {/* Heading — same sizing as quotesBanner heading */}
-        <h2 className="font-porscha text-[#005931] leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl" data-aos="fade-up" data-aos-duration="800">
+        <h2 className="font-porsha text-[#005931] leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl" data-aos="fade-up" data-aos-duration="800">
           WE LOVE TO HEAR FROM YOU.
         </h2>
 

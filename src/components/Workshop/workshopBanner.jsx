@@ -26,7 +26,7 @@ export default function WorkshopBannerSection() {
         </p>
 
         {/* Title */}
-        <h2 className="mt-3 font-porscha text-[#005931] leading-[1.15]  text-[clamp(38px,5.6vw,58px)]">
+        <h2 className="mt-3 font-porsha text-[#005931] leading-[1.15]  text-[clamp(38px,5.6vw,58px)]">
           AWADHI COOKING
         </h2>
 
@@ -43,7 +43,7 @@ export default function WorkshopBannerSection() {
         />
 
         {/* Description */}
-        <p className="mt-5 max-w-2xl mx-auto font-porscha text-[#005931]  text-[clamp(20px,2.4vw,32px)]">
+        <p className="mt-5 max-w-2xl mx-auto font-porsha text-[#005931]  text-[clamp(20px,2.4vw,32px)]">
           Each workshop is a blend of technique, story, and sensory exploration.
         </p>
       </div>

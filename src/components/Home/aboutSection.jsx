@@ -16,7 +16,7 @@ export default function AboutSection() {
           <div>
             <h2
               id="about-title"
-              className="text-5xl font-porscha sm:text-6xl lg:text-6xl  -tight text-[#005931]"  data-aos="fade-right"  data-aos-duration="800"
+              className="text-5xl font-porsha sm:text-6xl lg:text-6xl  -tight text-[#005931]"  data-aos="fade-right"  data-aos-duration="800"
             >
               About Firdaus <br /> Awadhi Kitchen
             </h2>

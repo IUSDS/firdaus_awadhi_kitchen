@@ -64,7 +64,7 @@ export default function FirstMenuSection() {
 
         {/* Heading – mirror ChefQuotes spacing/scale */}
         <h2
-          className="text-3xl sm:text-4xl lg:text-6xl font-porscha"
+          className="text-3xl sm:text-4xl lg:text-6xl font-porsha"
           style={{ color: MENU_GREEN }} data-aos="fade-in"  data-aos-duration="900"
         >
           MENU
@@ -76,7 +76,7 @@ export default function FirstMenuSection() {
           <div className="relative flex flex-col justify-center">
             {/* Half/Full label aligned to price column */}
             <div
-              className="absolute font-porscha -top-7 right-0 w-[6.75rem] text-right text-lg sm:text-xl lg:text-2xl"
+              className="absolute font-porsha -top-7 right-0 w-[6.75rem] text-right text-lg sm:text-xl lg:text-2xl"
               style={{ color: MENU_GREEN }}
             >
               Half/Full
@@ -88,7 +88,7 @@ export default function FirstMenuSection() {
                   {/* Name — leader — Price */}
                   <div className="flex items-baseline gap-3">
                     <span
-                      className="font-porscha text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px]"
+                      className="font-porsha text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px]"
                       style={{ color: MENU_GREEN }}
                     >
                       {it.name}
@@ -101,7 +101,7 @@ export default function FirstMenuSection() {
                     />
 
                     <span
-                      className="w-[5.25rem] font-porscha text-right text-[16px] sm:text-[18px] lg:text-[20px] tabular-nums"
+                      className="w-[5.25rem] font-porsha text-right text-[16px] sm:text-[18px] lg:text-[20px] tabular-nums"
                       style={{ color: MENU_GREEN }}
                     >
                       {it.price}

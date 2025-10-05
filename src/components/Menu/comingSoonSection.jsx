@@ -44,7 +44,7 @@ export default function ComingSoonSection() {
             {/* Title with padding to clear the stamp */}
             <div className="relative min-h-[58px] sm:min-h-[70px]" data-aos="fade-in"  data-aos-duration="900">
               <h2
-                className="font-porscha text-[clamp(18px,2.2vw,28px)] -wide text-[#FFF2DD] py-4"
+                className="font-porsha text-[clamp(18px,2.2vw,28px)] -wide text-[#FFF2DD] py-4"
                 style={{ paddingLeft: "clamp(110px,17vw,230px)" }}
               >
                 Vegetarian, Rolls &amp; Combo Menu
@@ -64,7 +64,7 @@ export default function ComingSoonSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 lg:gap-14 lg:divide-x divide-[#00593140]">
           {/* Left: Vegetarian 60% */}
           <div data-aos="fade-in"  data-aos-duration="900">
-            <h3 className="font-porscha text-[#005931] text-[clamp(32px,4.4vw,48px)]">
+            <h3 className="font-porsha text-[#005931] text-[clamp(32px,4.4vw,48px)]">
               Vegetarian Menu
             </h3>
 
@@ -72,7 +72,7 @@ export default function ComingSoonSection() {
               {vegItems.map((it) => (
                 <li
                   key={it}
-                  className="font-porscha text-[#005931] text-[clamp(20px,2.2vw,22px)]"
+                  className="font-porsha text-[#005931] text-[clamp(20px,2.2vw,22px)]"
                 >
                   {it}
                 </li>
@@ -82,7 +82,7 @@ export default function ComingSoonSection() {
 
           {/* Right: Rolls 40% */}
           <div className="lg:pl-12" data-aos="fade-in"  data-aos-duration="900">
-            <h3 className="font-porscha text-[#005931] text-[clamp(32px,4.4vw,48px)]">
+            <h3 className="font-porsha text-[#005931] text-[clamp(32px,4.4vw,48px)]">
               Rolls
             </h3>
 
@@ -90,7 +90,7 @@ export default function ComingSoonSection() {
               {rollItems.map((it) => (
                 <li
                   key={it}
-                  className="font-porscha text-[#005931] text-[clamp(20px,2.2vw,22px)]"
+                  className="font-porsha text-[#005931] text-[clamp(20px,2.2vw,22px)]"
                 >
                   {it}
                 </li>

@@ -8,7 +8,7 @@ export default function InfoSection() {
       className="relative bg-[#005931] text-[#FFF2DD]"
     >
       {/* Keep section rhythm consistent with other sections */}
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-16 xl:px-20 py-16 md:py-20 lg:py-24 text-center font-porscha">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-16 xl:px-20 py-16 md:py-20 lg:py-24 text-center font-porsha">
 
         {/* SectionDecor — same placement as quotes section */}
         <div className="flex justify-center">

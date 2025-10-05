@@ -72,7 +72,7 @@ export default function Footer({
 
           {/* 3) Contact Us */}
           <div className="w-full">
-            <h3 className="text-lg font-porscha">Contact Us</h3>
+            <h3 className="text-lg font-porsha">Contact Us</h3>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <span className="opacity-80 font-quicksand">Email</span>
@@ -106,7 +106,7 @@ export default function Footer({
 
           {/* 4) Location */}
           <div className="w-full">
-            <h3 className="text-lg font-porscha">Location</h3>
+            <h3 className="text-lg font-porsha">Location</h3>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <span className="opacity-80 font-quicksand">Address</span>
@@ -147,7 +147,7 @@ export default function Footer({
 function Section({ title, links, external = false }) {
   return (
     <div className="w-full">
-      <h3 className="text-lg font-porscha">{title}</h3>
+      <h3 className="text-lg font-porsha">{title}</h3>
       <ul className="mt-4 space-y-2 text-sm">
         {links.map((item) => (
           <li key={item.label}>

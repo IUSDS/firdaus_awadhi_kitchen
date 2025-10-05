@@ -34,7 +34,7 @@ export default function MeetTheChefBanner({
         <div className="grid grid-cols-12 gap-x-6 gap-y-12 items-stretch">
           {/* LEFT: Heading + paragraph */}
           <div className="col-span-12 lg:col-span-7 self-start" data-aos="fade-in"  data-aos-duration="800">
-            <h2 className="font-porscha text-[44px] sm:text-[56px] lg:text-[72px]">
+            <h2 className="font-porsha text-[44px] sm:text-[56px] lg:text-[72px]">
               {heading}
             </h2>
 

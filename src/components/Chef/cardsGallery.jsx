@@ -68,7 +68,7 @@ export default function CardGallerySection({
 
         {/* Heading and subtext inside the banner, centered */}
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 lg:py-24 text-center text-[#FFF2DD]">
-          <h2 className="font-porscha leading-[1.15] text-[clamp(40px,5.2vw,58px)]"  data-aos="fade-up"  data-aos-duration="800">
+          <h2 className="font-porsha leading-[1.15] text-[clamp(40px,5.2vw,58px)]"  data-aos="fade-up"  data-aos-duration="800">
             {title}
           </h2>
           <p className="mt-2 font-quicksand text-[clamp(16px,2.3vw,20px)]"  data-aos="fade-in"  data-aos-duration="800">
@@ -146,7 +146,7 @@ export default function CardGallerySection({
                     <h3
                       // Inactive uses brand text color; Active uses light text over image
                       style={{ color: isActive ? "#FFF2DD" : "#005930" }}
-                      className="font-porscha text-[clamp(16px,2.2vw,22px)] sm:text-[clamp(18px,2.4vw,24px)]"
+                      className="font-porsha text-[clamp(16px,2.2vw,22px)] sm:text-[clamp(18px,2.4vw,24px)]"
                     >
                       {c.title}
                     </h3>

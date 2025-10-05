@@ -10,7 +10,7 @@ export default function PhilosophySection() {
       <div className="relative bg-[#005931]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:pt-30 md:pt-24 pt-22 pb-10 md:pb-12">
           {/* Heading */}
-          <h2 className="text-center font-porscha text-[#FFF2DD] leading-[1.15] text-[clamp(42px,5.6vw,58px)]" data-aos="fade-up"  data-aos-duration="800">
+          <h2 className="text-center font-porsha text-[#FFF2DD] leading-[1.15] text-[clamp(42px,5.6vw,58px)]" data-aos="fade-up"  data-aos-duration="800">
             Philosophy &amp; Inspirations
           </h2>
 

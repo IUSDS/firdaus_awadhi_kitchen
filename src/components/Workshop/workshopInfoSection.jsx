@@ -17,7 +17,7 @@ export default function WorkshopInfoSection({
         <p className="font-quicksand text-[#005931] text-base md:text-lg">
           Virtual Workshop: Everyday Lucknow Comforts
         </p>
-        <h2 className="font-porscha text-[#005931] mt-2 text-3xl md:text-5xl lg:text-6xl">
+        <h2 className="font-porsha text-[#005931] mt-2 text-3xl md:text-5xl lg:text-6xl">
           What You’ll Learn?
         </h2>
       </div>

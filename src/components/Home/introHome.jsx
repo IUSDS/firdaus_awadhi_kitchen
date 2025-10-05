@@ -68,7 +68,7 @@ export default function IntroHome() {
         {/* Paragraph UPDATED: typewriter effect only; classes unchanged */}
         <h2
           id="introTitle"
-          className=" mx-auto font-porscha mt-2 sm:mt-3 max-w-3xl text-2xl md:text-4xl lg:text-5xl leading-relaxed text-[#005930]"
+          className=" mx-auto font-porsha mt-2 sm:mt-3 max-w-3xl text-2xl md:text-4xl lg:text-5xl leading-relaxed text-[#005930]"
           aria-live="off"
         >
           A Culinary Journey Into Awadhi Royalty With Chef Asma Alvi

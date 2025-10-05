@@ -31,7 +31,7 @@ export default function EventsIntroSection({
         {/* Right text — sized to visually match image width */}
         <div className="relative mx-auto lg:mx-0 w-full"  data-aos="fade-in" data-aos-duration="800">
           <SectionDecor variant="white" align="start" className="mb-1.5" sizeClass="h-10 w-10" gapClass="" />
-          <div className="space-y-2 font-porscha text-[#005931]">
+          <div className="space-y-2 font-porsha text-[#005931]">
             <p className="text-[clamp(22px,2.6vw,25px)]">
               Every Firdaus event is a journey into the heart of Awadhi hospitality.
             </p>
@@ -59,7 +59,7 @@ export default function EventsIntroSection({
 
               {/* Bottom content */}
               <div className="w-full text-center mt-1">
-                <h3 className="font-porscha text-[clamp(20px,1.9vw,21px)]">{card.title}</h3>
+                <h3 className="font-porsha text-[clamp(20px,1.9vw,21px)]">{card.title}</h3>
                 {card.meta && <p className="mt-2 font-quicksand text-[14px]/5 opacity-80">{card.meta}</p>}
                 {card.blurb && <p className="font-quicksand mt-2 text-[clamp(14.5px,1.6vw,14.5px)] opacity-90">{card.blurb}</p>}
                 <a

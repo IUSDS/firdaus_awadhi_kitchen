@@ -45,7 +45,7 @@ export default function TimelineSection() {
     <section className="relative isolate overflow-visible px-4 sm:px-6 lg:pb-30 md:pb-24 pb-22">
       {/* Heading — mirrors firdausMemorySection.jsx */}
       <div className="mx-auto max-w-7xl text-center" >
-        <h2 className="font-porscha text-[#005931] leading-[1.15] text-[clamp(42px,5.6vw,58px)]"  data-aos="fade-up"  data-aos-duration="800">
+        <h2 className="font-porsha text-[#005931] leading-[1.15] text-[clamp(42px,5.6vw,58px)]"  data-aos="fade-up"  data-aos-duration="800">
           Chef’s Timeline
         </h2>
 

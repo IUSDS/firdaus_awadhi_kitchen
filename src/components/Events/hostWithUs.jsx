@@ -31,7 +31,7 @@ export default function CateringSection({ imageSrc = "" }) {
               />
 
               {/* Heading — same sizing/leading rhythm as quoteBanner.jsx */}
-              <h2 className="text-5xl sm:text-6xl lg:text-6xl leading-[1.3] -tight font-porscha"  data-aos="fade-in" data-aos-duration="800">
+              <h2 className="text-5xl sm:text-6xl lg:text-6xl leading-[1.3] -tight font-porsha"  data-aos="fade-in" data-aos-duration="800">
                 Host With Us
               </h2>
 

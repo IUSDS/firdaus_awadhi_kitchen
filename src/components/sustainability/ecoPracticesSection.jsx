@@ -96,7 +96,7 @@ export default function EcoPracticesSection({
 
       {/* Heading container (unchanged) */}
       <div className="relative z-10 mx-auto max-w-7xl" data-aos="fade-up" data-aos-duration="800">
-        <h2 className="font-porscha text-[#005931] text-5xl sm:text-6xl lg:text-6xl">
+        <h2 className="font-porsha text-[#005931] text-5xl sm:text-6xl lg:text-6xl">
           Eco Practices
         </h2>
       </div>

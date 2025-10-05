@@ -30,7 +30,7 @@ export default function IngredientsSection() {
                   className="mb-2 pl-4 sm:pl-6"
                 />
 
-                <h2 className="pl-4 sm:pl-6 font-porscha leading-[1.25] -tight text-white text-4xl sm:text-5xl lg:text-5xl" data-aos="fade-up" data-aos-duration="800">
+                <h2 className="pl-4 sm:pl-6 font-porsha leading-[1.25] -tight text-white text-4xl sm:text-5xl lg:text-5xl" data-aos="fade-up" data-aos-duration="800">
                   Ingredients & Sourcing
                 </h2>
 

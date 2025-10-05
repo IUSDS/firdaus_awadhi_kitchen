@@ -52,7 +52,7 @@ export default function CommitmentSection() {
         />
 
         {/* Section Heading (same sizing & spacing as contactBanner.jsx) */}
-        <h2 className="font-porscha text-[#005931] leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl" data-aos="fade-up" data-aos-duration="800">
+        <h2 className="font-porsha text-[#005931] leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl" data-aos="fade-up" data-aos-duration="800">
           Commitment Statement
         </h2>
 

@@ -41,7 +41,7 @@ export default function ChefStorySection() {
             draggable="false"
             />
 
-          <h2 className="text-[#005931] -tight text-center sm:text-left font-porscha leading-[1.25] text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
+          <h2 className="text-[#005931] -tight text-center sm:text-left font-porsha leading-[1.25] text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
             <span className="block">Distance Makes</span>
             <span className="block">the Flavours Clearer</span>
           </h2>

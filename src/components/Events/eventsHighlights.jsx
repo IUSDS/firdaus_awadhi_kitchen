@@ -18,7 +18,7 @@ export default function EventHighlightsSection({ items = DEFAULT_ITEMS }) {
         <div className="mx-auto w-full max-w-[1140px] px-4 sm:px-6 pt-10 sm:pt-12 md:pt-16 pb-2 md:pb-2">
           {/* ——— KEEP YOUR HEADING EXACTLY AS-IS ——— */}
           <SectionDecor variant="green" className="mb-2" />
-          <h2 className="mb-10 text-5xl sm:text-6xl leading-[1.3] tracking-tight font-porscha" data-aos="fade-up" data-aos-duration="800">
+          <h2 className="mb-10 text-5xl sm:text-6xl leading-[1.3] tracking-tight font-porsha" data-aos="fade-up" data-aos-duration="800">
             Event Highlights Gallery
           </h2>
 

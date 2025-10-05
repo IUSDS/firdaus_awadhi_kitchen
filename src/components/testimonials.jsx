@@ -36,7 +36,7 @@ function RatingCard({
 }) {
   return (
     <article className="relative flex flex-col items-center justify-center bg-[#005931] text-[#FFF2DD] rounded-b-[28px] min-h-[280px] md:min-h-[340px] lg:min-h-[380px] px-6">
-      <div className="text-[48px] leading-none font-porscha sm:text-[56px] lg:text-[64px]">
+      <div className="text-[48px] leading-none font-porsha sm:text-[56px] lg:text-[64px]">
         {rating}
       </div>
       <div className="mt-3 font-quicksand text-[14px] sm:text-[15px]">
@@ -110,7 +110,7 @@ export default function Testimonials({
             className="h-10 w-10 sm:h-10 sm:w-8 object-contain"
           />
 
-          <h2 className="text-center text-5xl font-porscha sm:text-6xl lg:text-6xl text-[#005931]">
+          <h2 className="text-center text-5xl font-porsha sm:text-6xl lg:text-6xl text-[#005931]">
             What our Customers Say
           </h2>
 

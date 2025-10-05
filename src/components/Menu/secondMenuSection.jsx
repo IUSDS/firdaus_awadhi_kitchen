@@ -70,7 +70,7 @@ export default function SecondMenuSection() {
           <div className="order-1 lg:order-2 relative flex flex-col justify-center">
             {/* Half/Full label aligned to price column */}
             <div
-              className="absolute font-porscha -top-7 right-0 w-[6.75rem] text-right text-lg sm:text-xl lg:text-2xl"
+              className="absolute font-porsha -top-7 right-0 w-[6.75rem] text-right text-lg sm:text-xl lg:text-2xl"
               style={{ color: TEXT_LIGHT }}
             >
               Half/Full
@@ -82,7 +82,7 @@ export default function SecondMenuSection() {
                   {/* Name — leader — Price */}
                   <div className="flex items-baseline gap-3">
                     <span
-                      className="font-porscha text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px]"
+                      className="font-porsha text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px]"
                       style={{ color: TEXT_LIGHT }}
                     >
                       {it.name}
@@ -94,7 +94,7 @@ export default function SecondMenuSection() {
                     />
 
                     <span
-                      className="w-[6.75rem] font-porscha text-right text-[16px] sm:text-[18px] lg:text-[20px] tabular-nums"
+                      className="w-[6.75rem] font-porsha text-right text-[16px] sm:text-[18px] lg:text-[20px] tabular-nums"
                       style={{ color: TEXT_LIGHT }}
                     >
                       {it.price}

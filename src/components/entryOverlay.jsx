@@ -101,7 +101,7 @@ export default function EntryOverlay({
       <div className="absolute inset-0 grid place-items-center px-6">
         <h1
           ref={wordRef}
-          className="font-porscha text-center leading-[0.9] z-[0]"
+          className="font-porsha text-center leading-[0.9] z-[0]"
           style={{ fontSize: "clamp(56px, 12vw, 180px)" }}
         >
           {text}

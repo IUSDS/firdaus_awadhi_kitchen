@@ -96,7 +96,7 @@ export default function SustainabilitySection({
           <div data-aos="fade-right"  data-aos-duration="900">
             <h2
               id={`${id}-title`}
-              className="text-5xl font-porscha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]" 
+              className="text-5xl font-porsha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]" 
             >
               Sustainability Highlight
             </h2>

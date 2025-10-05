@@ -17,7 +17,7 @@ export default function QuoteBanner() {
         <div className="mb-14 grid grid-cols-1 lg:grid-cols-[minmax(0,520px)_1fr] items-end gap-6 lg:gap-16" data-aos="fade-right"  data-aos-duration="800">
           <h2
             id="quote-banner-title"
-            className="text-5xl font-porscha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]"
+            className="text-5xl font-porsha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]"
           >
             Chef's Quote
           </h2>
@@ -57,10 +57,10 @@ export default function QuoteBanner() {
             {/* Centered content */}
             <div className="flex items-center justify-start text-left px-6 sm:px-10 lg:px-16 py-8 md:py-0 md:h-[calc(100%-5rem)]">
               <div className="max-w-3xl relative" data-aos="fade-up"  data-aos-duration="800">
-                <p className="font-porscha leading-[1.45] -wide text-[clamp(22px,3vw,36px)]">
+                <p className="font-porsha leading-[1.45] -wide text-[clamp(22px,3vw,36px)]">
                   “Firdaus is my way of honouring the hands that fed me—with care, memory, and quiet mastery.”
                 </p>
-                   <p className="mt-5 md:mt-0 font-porscha text-[clamp(26px,1.6vw,18px)] opacity-90 md:absolute md:-bottom-16 md:right-0">
+                   <p className="mt-5 md:mt-0 font-porsha text-[clamp(26px,1.6vw,18px)] opacity-90 md:absolute md:-bottom-16 md:right-0">
                     — Chef Asma Alvi
                   </p>
               </div>

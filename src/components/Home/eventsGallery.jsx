@@ -96,7 +96,7 @@ function GalleryCard({ title, date, imgSrc, imgAlt, decorLength = "78%", decorAl
           "top-1/2 -translate-y-1/2",
         ].join(" ")}
       >
-        <h3 className="font-porscha text-2xl sm:text-3xl lg:text-4xl leading-tight">
+        <h3 className="font-porsha text-2xl sm:text-3xl lg:text-4xl leading-tight">
           {title}
         </h3>
       </div>
@@ -149,7 +149,7 @@ export default function GallerySection({
         <div className="mb-14 grid grid-cols-1 lg:grid-cols-[minmax(0,520px)_1fr] items-end gap-6 lg:gap-16"  >
           <h2
             id="events-title"
-            className="text-5xl font-porscha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]" data-aos="fade-right"  data-aos-duration="800"
+            className="text-5xl font-porsha sm:text-6xl lg:text-6xl leading-[1.3] -tight text-[#005931]" data-aos="fade-right"  data-aos-duration="800"
           >
             Upcoming Events <br className="hidden sm:block" /> & Workshops
           </h2>

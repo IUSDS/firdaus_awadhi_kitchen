@@ -66,7 +66,7 @@ export default function UpcomingWorkshopSection({
           <p className="font-quicksand font-semibold uppercase text-[clamp(23px,1.35vw,22px)]">
             Upcoming
           </p>
-          <h2 className="mt-1 font-porscha leading-[1.15] text-[clamp(50px,4.2vw,52px)]">
+          <h2 className="mt-1 font-porsha leading-[1.15] text-[clamp(50px,4.2vw,52px)]">
             Workshops
           </h2>
         </div>
@@ -109,7 +109,7 @@ function WorkshopRow({ imgSrc = "", title, description }) {
 
       {/* Right: Title + Description (smaller sizes) */}
       <div className="w-full ml-2 md:justify-self-start md:max-w-[92%]" data-aos="zoom-in" data-aos-duration="800">
-        <h3 className="font-porscha text-[clamp(24px,2.1vw,22px)] leading-tight">
+        <h3 className="font-porsha text-[clamp(24px,2.1vw,22px)] leading-tight">
           {title}
         </h3>
         <p className="mt-1.5 font-quicksand text-[clamp(16px,1.25vw,15px)] opacity-95">

@@ -3,9 +3,9 @@
 
 /* 2) Self-hosted Porsha Richela (path & file name must match exactly) */
 @font-face {
-  font-family: "Porscha Richela";
+  font-family: "Porsha Richela";
   src: url("/fonts/PorshaRichela.ttf") format("truetype");
-  font-weight: 100 300 500 600 900;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -15,7 +15,7 @@
 
 /* 4) Tailwind v4 tokens via @theme (no tailwind.config.js needed) */
 @theme {
-  --font-porscha: "Porsha Richela", serif;
+  --font-porsha: "Porsha Richela", serif;
   --font-quicksand: "Quicksand", system-ui, ui-sans-serif, sans-serif;
 }
 

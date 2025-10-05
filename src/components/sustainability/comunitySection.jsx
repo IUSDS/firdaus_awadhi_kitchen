@@ -90,7 +90,7 @@ export default function CommunitySection({
           <div className="relative z-10 flex h-full items-center">
             <div className="w-full max-w-3xl px-10 sm:px-14 lg:px-20 py-10 sm:py-12">
               {/* Heading — matches EcoPracticesSection sizing (font + scale) */}
-              <h2 className="font-porscha text-white leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl" data-aos="fade-up" data-aos-duration="800">
+              <h2 className="font-porsha text-white leading-[1.3] -tight text-5xl sm:text-6xl lg:text-6xl" data-aos="fade-up" data-aos-duration="800">
                 Community Ties
               </h2>
 

@@ -50,7 +50,7 @@ function InnerContent() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-10 lg:gap-12 min-w-0">
       <div className="min-w-0">
-        <h2 className="font-porscha text-[#005931] text-5xl sm:text-6xl lg:text-6xl leading-tight">
+        <h2 className="font-porsha text-[#005931] text-5xl sm:text-6xl lg:text-6xl leading-tight">
           Sign up for our Newsletter
         </h2>
         <p className="mt-4 font-quicksand text-[#005931] text-[15px] sm:text-[16px]">

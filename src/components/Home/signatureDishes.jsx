@@ -52,7 +52,7 @@ export default function SignatureDishes({ items }) {
 
         {/* Center heading */}
         <div className="py-6" data-aos="fade-up"  data-aos-duration="800">
-          <h2 className="text-center font-porscha leading-[1.54] -wide
+          <h2 className="text-center font-porsha leading-[1.54] -wide
                          text-[clamp(34px,3.8vw,56px)]">
             Signature Dishes
           </h2>
@@ -124,7 +124,7 @@ export default function SignatureDishes({ items }) {
                         px-8 py-10
                         border-b-2 border-[#005931]
                         focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0F5B42]/70
-                        font-porscha
+                        font-porsha
                         text-[clamp(18px,2.2vw,26px)] leading-tight
                         -wide
                         transition-all duration-300
@@ -147,7 +147,7 @@ export default function SignatureDishes({ items }) {
                         className="
                           relative z-10 inline-block
                           after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0
-                          after:bg-[#0F5B42] after:transition-all after:duration-300
+                          after:bg-[#005931] after:transition-all after:duration-300
                           group-hover:after:w-full
                           group-hover:translate-x-0.5
                           transition-transform
