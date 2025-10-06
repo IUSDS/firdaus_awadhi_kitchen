@@ -19,7 +19,7 @@ export default function Footer({
     { label: "Facebook", href: "https://www.facebook.com/firdausawadhkitchen/" },
     { label: "LinkedIn", href: "https://www.linkedin.com/company/firdaus-awadhi-kitchen" },
   ],
-  email = "info@firdaus.com",
+  email = "firdausawadhikitchen@gmail.com",
   phones = ["+91-7311109092", "+91-7311109091"],
   addressLines = ["C-10 Kisan Bazar,", "Lucknow"],
   madeByText = "IUS Digital Solutions",
