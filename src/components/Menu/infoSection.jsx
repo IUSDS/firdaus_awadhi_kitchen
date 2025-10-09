@@ -28,7 +28,7 @@ export default function InfoSection() {
         {/* Small description */}
         <p className="mt-8  text-[clamp(14px,1.2vw,18px)]">
           To place your order, Reach out to us via call/Whatsapp on
-          &nbsp;+91-731109090 / +91-731109092
+          &nbsp;+91-7311109091 / +91-7311109092
         </p>
       </div>
     </section>
