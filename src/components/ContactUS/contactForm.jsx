@@ -63,9 +63,9 @@ export default function ContactForm() {
               <h2 className={headingClass} data-aos="fade-right" data-aos-duration="800">Get in Touch</h2>
 
               <div className="mt-6 space-y-2 font-quicksand text-[15px] sm:text-[16px] leading-7 opacity-95" data-aos="fade-right" data-aos-duration="800">
-                <p>+91 - 12345 67890</p>
+                <p>+91 7311109091 / +91 7311109092</p>
                 <p>firdausawadhikitchen@gmail.com</p>
-                <p>Working Hours: 12:30 AM–10:30 PM</p>
+                <p>Working Hours: 12:30pm - 10:30pm</p>
               </div>
 
               <h3 className={`${headingClass} mt-10`} data-aos="fade-right" data-aos-duration="800">Address</h3>
