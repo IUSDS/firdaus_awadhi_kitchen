@@ -184,19 +184,75 @@ export default function ContactForm() {
                 </div>
 
                 {/* Subject */}
-                <div>
-                  <label htmlFor="subject" className={labelClass}>
-                    Subject
-                  </label>
-                  <input
-                    id="subject"
-                    name="subject"
-                    type="text"
-                    placeholder="Subject"
-                    className={inputBase}
-                    required
-                  />
-                </div>
+                {/* Subject → Glassy Topic dropdown (only this block replaced) */}
+<div className="relative [&_summary::-webkit-details-marker]:hidden">
+  {/* Keep the visual label outside the control */}
+  <label htmlFor="topic_summary" className={labelClass}>Topic</label>
+
+  {/* Hidden fields submitted with the form */}
+  <input type="hidden" name="topic" id="topic_value" />
+  <input type="hidden" name="subject" id="subject" value="Contact: " />
+
+  {/* Custom dropdown using <details> (no hooks) */}
+  <details>
+    <summary
+      id="topic_summary"
+      className={[
+        // match your input shell
+        inputBase,
+        // extra spacing for chevron + glassy feel
+        "pr-12 bg-white/5 backdrop-blur-sm border border-[#FFF2DD]/10",
+        "text-[#FFF2DD] hover:bg-white/[0.08]",
+        "focus-visible:ring-2 focus-visible:ring-[#FFF2DD]/40 focus-visible:border-transparent",
+        "ring-offset-1 ring-offset-[#005930]",
+        "flex items-center justify-between cursor-pointer select-none"
+      ].join(" ")}
+      aria-haspopup="listbox"
+      aria-expanded="false"
+    >
+      <span id="topic_display" className="opacity-60">Select a topic</span>
+      <svg viewBox="0 0 20 20" className="h-5 w-5 text-[#FFF2DD]/85" fill="currentColor" aria-hidden="true">
+        <path d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.17l3.71-2.94a.75.75 0 1 1 .92 1.18l-4.24 3.36a.75.75 0 0 1-.92 0L5.21 8.41a.75.75 0 0 1 .02-1.2z" />
+      </svg>
+    </summary>
+
+    {/* Options popover */}
+    <ul
+      role="listbox"
+      className="absolute z-50 mt-2 w-full overflow-hidden rounded-md border border-[#FFF2DD]/10 bg-black/30 backdrop-blur-md shadow-xl outline-none"
+    >
+      {[
+        "Aam ka Achaar Order",
+        "Bulk Order",
+        "Menu Consultation",
+        "Event Consultation",
+        "General enquiry",
+      ].map((opt) => (
+        <li key={opt} role="option">
+          <button
+            type="button"
+            className="block w-full px-4 py-3 text-left text-[#FFF2DD] hover:bg-white/8 focus:bg-white/8 transition"
+            onClick={(e) => {
+              const v = opt;
+              const details = e.currentTarget.closest("details");
+              const topicEl = document.getElementById("topic_value");
+              const subjectEl = document.getElementById("subject");
+              const displayEl = document.getElementById("topic_display");
+
+              if (topicEl) topicEl.value = v;
+              if (subjectEl) subjectEl.value = `Contact: ${v}`;
+              if (displayEl) { displayEl.textContent = v; displayEl.classList.remove("opacity-60"); }
+              if (details) details.open = false;
+            }}
+          >
+            {opt}
+          </button>
+        </li>
+      ))}
+    </ul>
+  </details>
+</div>
+
 
                 {/* Message */}
                 <div>
@@ -218,7 +274,7 @@ export default function ContactForm() {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="inline-flex cursor-pointer items-center justify-center rounded-md bg-[#FFF2DD] px-6 py-2.5 font-quicksand text-[16px] text-[#005930] shadow-sm transition hover:bg-[#FFF2DD]/95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-0 focus-visible:ring-[#FFF2DD]/40"
+                    className="inline-flex cursor-pointer items-center font-bold justify-center rounded-md bg-[#FFF2DD] px-6 py-2.5 font-quicksand text-[16px] text-[#005930] shadow-sm transition hover:bg-[#FFF2DD]/95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-0 focus-visible:ring-[#FFF2DD]/40"
                   >
                     {submitting ? "Sending..." : "Submit"}
                   </button>
