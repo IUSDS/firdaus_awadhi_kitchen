@@ -23,7 +23,7 @@ export default function Footer({
   phones = ["+91-7311109092", "+91-7311109091"],
   addressLines = ["C-10 Kisan Bazar,", "Lucknow"],
   madeByText = "IUS Digital Solutions",
-  madeByHref = "#",
+  madeByHref = "https://www.iusdigitalsolutions.com/",
   strip = sectionStrip,
 }) {
   const year = new Date().getFullYear();
@@ -132,7 +132,7 @@ export default function Footer({
             © {year} All Rights Reserved. Website and Marketing by{" "}
             <a
               href={madeByHref}
-              className="font-medium underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-white/40"
+              className="font-medium underline"
               {...(isExternal(madeByHref) && { target: "_blank", rel: "noopener noreferrer" })}
             >
               {madeByText}
