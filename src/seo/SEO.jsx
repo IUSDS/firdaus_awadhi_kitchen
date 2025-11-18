@@ -20,10 +20,10 @@ export function SEO({
   noIndex,
   includeTitle = true,
   includeDescription = true,
+  jsonLd, // 👈 NEW
 }) {
   const fullTitle = title ? `${title}` : DEFAULT_TITLE;
 
-  // For browsers/Google (JS-enabled). Bots for previews won't use this.
   const inferred =
     typeof window !== "undefined"
       ? window.location.href.split("#")[0].split("?")[0]
@@ -42,6 +42,12 @@ export function SEO({
         name="robots"
         content={noIndex ? "noindex, nofollow" : "index, follow"}
       />
+
+      {jsonLd && (
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+      )}
     </Helmet>
   );
 }
