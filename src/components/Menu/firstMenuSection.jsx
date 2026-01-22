@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
+
 
 import { menuStripW } from "../../assets/icons";
 import SectionDecor from "../sectionDecor";
@@ -34,7 +36,25 @@ const items = [
   },
 ];
 
+const BULK_MENU_FILE_ID = "1OvBC4dF-QjCb2_4dbLSg5eSJlxM4dgdV";
+
+const BULK_MENU_EMBED_URL = `https://drive.google.com/file/d/${BULK_MENU_FILE_ID}/preview`;
+const BULK_MENU_DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${BULK_MENU_FILE_ID}`;
+
+
 export default function FirstMenuSection() {
+
+const [isBulkMenuOpen, setIsBulkMenuOpen] = useState(false);
+
+useEffect(() => {
+  if (!isBulkMenuOpen) return;
+  const prev = document.body.style.overflow;
+  document.body.style.overflow = "hidden";
+  return () => {
+    document.body.style.overflow = prev;
+  };
+}, [isBulkMenuOpen]);
+
   return (
     <section className="relative isolate overflow-hidden">
       {/* SIDE STRIPS — fixed on the screen edges at all breakpoints */}
@@ -58,6 +78,36 @@ export default function FirstMenuSection() {
       {/* CONTENT */}
       <div className="relative z-10 max-w-7xl mx-auto px-18 sm:px-22 lg:px-18 xl:px-4 py-14 lg:py-14">
         {/* SectionDecor above heading, aligned with left content start */}
+
+        {/* Bulk Menu CTA row (ABOVE SectionDecor) */}
+        <div
+          className="w-full flex items-center justify-between gap-4 mt-3"
+          // data-aos="fade-in"
+          // data-aos-duration="900"
+        >
+          <div>
+            <p
+              className="font-porsha font-medium text-3xl sm:text-3xl md:text-4xl"
+              style={{ color: MENU_GREEN }}
+              >
+              Bulk menu
+            </p>
+          </div>
+
+          <div>
+            <button
+              type="button"
+              onClick={() => setIsBulkMenuOpen(true)}
+              className="px-3 md:px-5 py-2 rounded-full font-porsha text-base sm:text-lg border transition-transform duration-200 hover:scale-[1.02]"
+              style={{ color: MENU_GREEN, borderColor: MENU_GREEN }}
+              >
+              View Menu
+            </button>
+          </div>
+        </div>
+
+        <hr className="my-10" style={{ color: MENU_GREEN }} />
+
         <div className="mb-2">
           <SectionDecor />
         </div>
@@ -131,6 +181,62 @@ export default function FirstMenuSection() {
           </div>
         </div>
       </div>
+
+      {isBulkMenuOpen &&
+  typeof document !== "undefined" &&
+  createPortal(
+    <div className="fixed inset-0 z-[99999] flex items-center justify-center p-4">
+      {/* Backdrop */}
+      <button
+        type="button"
+        className="absolute inset-0 bg-black/50"
+        onClick={() => setIsBulkMenuOpen(false)}
+        aria-label="Close bulk menu"
+      />
+
+      {/* Modal */}
+      <div className="relative w-full max-w-5xl bg-[#FFF2DD] rounded-2xl shadow-xl overflow-hidden">
+        <div className="flex items-center justify-between px-4 sm:px-6 py-3 border-b">
+          <div>
+          <p className="font-porsha text-lg sm:text-xl" style={{ color: MENU_GREEN }}>
+            Bulk Menu
+          </p>
+          </div>
+          <div className="flex gap-2 sm:gap-4">
+          <a
+            href={BULK_MENU_DOWNLOAD_URL}
+            target="_blank"
+            rel="noreferrer"
+            download
+            className="px-4 py-1.5 rounded-full font-porsha border"
+            style={{ color: MENU_GREEN, borderColor: MENU_GREEN }}
+            >
+            Download
+          </a>
+          <button
+            type="button"
+            onClick={() => setIsBulkMenuOpen(false)}
+            className="px-4 py-1.5 rounded-full font-porsha border"
+            style={{ color: MENU_GREEN, borderColor: MENU_GREEN }}
+            >
+            Close
+          </button>
+            </div>
+        </div>
+
+        <div className="w-full h-[85vh]">
+          <iframe
+            title="Bulk menu PDF"
+            src={BULK_MENU_EMBED_URL}
+            className="w-full h-full"
+            allow="autoplay"
+          />
+        </div>
+      </div>
+    </div>,
+    document.body
+  )}
+
     </section>
   );
 }
