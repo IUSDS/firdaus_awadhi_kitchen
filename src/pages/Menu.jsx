@@ -14,80 +14,75 @@ const menuJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Menu",
-      "@id": "https://www.firdausawadhikitchen.com/menu#menu",
-      "name": "Firdaus Awadhi Kitchen Menu",
-      "url": "https://www.firdausawadhikitchen.com/menu",
-      "description": "Menu of Kebabs, Dum Biryani, Kormas, Artisanal Breads & Seasonal Plates reflecting Awadhi cuisine.",
-       "keywords": ["Awadhi Food", "Mughlai Cuisine", "Lucknow Cuisine", "City of Gastronomy", "UNESCO"],
-      "hasMenuSection": [
-        {
-          "@type": "MenuSection",
-          "@id": "https://www.firdausawadhikitchen.com/menu#kebabs",
-          "name": "Kebabs",
-          "hasMenuItem": [
-            {
-              "@type": "MenuItem",
-              "@id": "https://www.firdausawadhikitchen.com/menu#shami-kebab",
-              "name": "Shami Kebab",
-              "description": "Melt-in-the-mouth Awadhi shami kebabs, pan-seared and served with chutneys.",
-              "offers": {
-                "@type": "Offer",
-                "priceCurrency": "INR",
-                "availability": "InStock"
-              }
-            },
-            {
-              "@type": "MenuItem",
-              "@id": "https://www.firdausawadhikitchen.com/menu#chapli-kebab",
-              "name": "Chapli Kebab",
-              "description": "Juicy chapli kebabs with coarse mince, whole spices and a crisp exterior.",
-              "offers": {
-                "@type": "Offer",
-                "priceCurrency": "INR",
-                "availability": "InStock"
-              }
-            }
-          ]
-        },
-        {
-          "@type": "MenuSection",
-          "@id": "https://www.firdausawadhikitchen.com/menu#biryani",
-          "name": "Dum Biryani",
-          "hasMenuItem": [
-            {
-              "@type": "MenuItem",
-              "@id": "https://www.firdausawadhikitchen.com/menu#mutton-biryani",
-              "name": "Mutton Biryani",
-              "description": "Awadhi-style mutton dum biryani served with raita, salan and accompaniments.",
-              "offers": {
-                "@type": "Offer",
-                "priceCurrency": "INR",
-                "availability": "InStock"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "@type": "WebPage",
       "@id": "https://www.firdausawadhikitchen.com/menu#webpage",
       "url": "https://www.firdausawadhikitchen.com/menu",
       "name": "Menu | Firdaus Awadhi Kitchen",
-      "description": "Explore the Firdaus Awadhi Kitchen menu of kebabs, dum biryanis, kormas, curries, breads and seasonal plates.",
+      "description": "Explore the Firdaus Awadhi Kitchen menu featuring authentic Awadhi and Mughlai cuisine from Lucknow. The menu highlights traditional kebabs, slow-cooked dum biryanis, aromatic kormas, rich curries, artisanal breads, and seasonal specialties inspired by the royal kitchens of the City of Nawabs. Crafted using time-honoured techniques and balanced spices, the offerings are available for dine-in, takeaway, bulk orders, and catering across Lucknow and Gomti Nagar.",
+      "keywords": [
+        "Awadhi food",
+        "Awadhi restaurant",
+        "Authentic Awadhi cuisine",
+        "Mughlai cuisine",
+        "Lucknowi cuisine",
+        "Lucknow kebabs",
+        "Best Awadhi kitchen near me",
+        "Best Awadhi kitchen in Lucknow",
+        "Best Awadhi kitchen in Gomti Nagar",
+        "Mughlai restaurant in Gomti Nagar",
+        "Awadhi biryani",
+        "Lucknowi biryani",
+        "Chicken Korma",
+        "Dum biryani",
+        "Galouti kebab",
+        "Kakori kebab",
+        "Awadhi kebabs",
+        "Shami kebabs",
+        "Mutton biryani",
+        "Paya",
+        "Khaliya Salan",
+        "Chicken Korma meal box",
+        "Aam ka achaar",
+        "Mirch ka achaar",
+        "Galouti kebab in Gomti Nagar",
+        "Awadhi biryani in Lucknow",
+        "Firdaus Awadhi Kitchen Gomti Nagar",
+        "UNESCO City of Gastronomy",
+        "Awadhi restaurant in Gomti Nagar",
+        "Awadhi food in Gomti Nagar",
+        "Best Mughlai restaurant in Gomti Nagar",
+        "Lucknowi cuisine in Gomti Nagar",
+        "Awadhi restaurant in Lucknow",
+        "Authentic Awadhi cuisine in Lucknow",
+        "Mughlai cuisine in Lucknow",
+        "Awadhi food bulk order",
+        "Awadhi catering in Lucknow",
+        "Mughlai catering in Lucknow",
+        "Bulk biryani order Lucknow",
+        "Kebabs bulk order Lucknow",
+        "Awadhi catering in Gomti Nagar",
+        "Bulk food order in Gomti Nagar",
+        "Biryani bulk order Gomti Nagar"
+      ],
       "inLanguage": "en-IN",
       "isPartOf": {
         "@id": "https://www.firdausawadhikitchen.com/#website"
       },
       "about": {
-        "@id": "https://www.firdausawadhikitchen.com/menu#menu"
+        "@id": "https://www.firdausawadhikitchen.com/#restaurant"
       }
     },
     {
       "@type": "Restaurant",
       "@id": "https://www.firdausawadhikitchen.com/#restaurant",
-      "name": "Firdaus Awadhi Kitchen"
+      "name": "Firdaus Awadhi Kitchen",
+      "sameAs": [
+        "https://www.instagram.com/firdausawadhikitchen/",
+        "https://www.facebook.com/firdausawadhkitchen/",
+        "https://restaurant-guru.in/Firdaus-Awadhi-Kitchen-Lucknow",
+        "https://www.zomato.com/lucknow/firdaus-awadhi-kitchen-gomti-nagar",
+        "https://www.linkedin.com/company/firdaus-awadhi-kitchen"
+      ]
     }
   ]
 }
@@ -98,8 +93,8 @@ const Menu = () => {
   return (
     <>
       <SEO
-        title="Awadhi Food Menu – Royal Nawabi & Mughlai Specialties | Firdaus Awadhi Kitchen"
-        description="Explore a curated menu of authentic Awadhi food and Mughlai cuisine inspired by the royal kitchens of Lucknow—India’s UNESCO City of Gastronomy. Experience kebabs, biryanis, and award-worthy classics."
+        title="Our Menu | Awadhi and Mughlai Specialties "
+        description="Explore a curated menu of authentic Awadhi food and Mughlai cuisine inspired by the royal kitchens of Lucknow; India’s UNESCO City of Gastronomy. Experience kebabs, biryanis, and award-worthy classics."
         canonical={`${SITE_URL}${pathname}`}
          jsonLd={menuJsonLd}
       />

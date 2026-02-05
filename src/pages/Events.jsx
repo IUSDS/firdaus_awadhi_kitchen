@@ -13,11 +13,51 @@ const eventsJsonLd = {
     {
       "@type": "Event",
       "@id": "https://www.firdausawadhikitchen.com/event#event",
-      "name": "Awadhi Pop-up & Culinary Events",
-      "description": "Curated events and pop-ups by Firdaus Awadhi Kitchen, featuring Awadhi small plates, festive menus and pairing experiences across Lucknow.",
-"keywords": ["Awadhi Food", "Mughlai Cuisine", "Lucknow Cuisine", "City of Gastronomy", "UNESCO"],
-      "startDate": "2025-01-01T18:00:00+05:30",
-      "endDate": "2025-12-31T23:00:00+05:30",
+      "name": "Culinary Events and Awadhi Catering for Parties",
+      "description": "Firdaus Awadhi Kitchen offers curated culinary events and Awadhi catering services across Lucknow and Gomti Nagar, bringing the richness of traditional Awadhi and Mughlai cuisine to private parties, corporate gatherings, and festive celebrations. From intimate tasting experiences to large-scale catering and bulk orders, menus feature signature kebabs, slow-cooked dum biryanis, aromatic kormas, and festive spreads prepared using time-honoured techniques inspired by the royal kitchens of Lucknow, delivering authentic flavour and refined hospitality for every occasion.",
+"keywords": [
+        "Awadhi food",
+        "Awadhi restaurant",
+        "Authentic Awadhi cuisine",
+        "Mughlai cuisine",
+        "Lucknowi cuisine",
+        "Lucknow kebabs",
+        "Best Awadhi kitchen near me",
+        "Best Awadhi kitchen in Lucknow",
+        "Best Awadhi kitchen in Gomti Nagar",
+        "Mughlai restaurant in Gomti Nagar",
+        "Awadhi biryani",
+        "Lucknowi biryani",
+        "Chicken Korma",
+        "Dum biryani",
+        "Galouti kebab",
+        "Kakori kebab",
+        "Awadhi kebabs",
+        "Galouti kebab in Gomti Nagar",
+        "Awadhi biryani in Lucknow",
+        "Firdaus Awadhi Kitchen Gomti Nagar",
+        "UNESCO City of Gastronomy",
+        "Awadhi restaurant in Gomti Nagar",
+        "Awadhi food in Gomti Nagar",
+        "Best Mughlai restaurant in Gomti Nagar",
+        "Lucknowi cuisine in Gomti Nagar",
+        "Awadhi restaurant in Lucknow",
+        "Authentic Awadhi cuisine in Lucknow",
+        "Mughlai cuisine in Lucknow",
+        "Awadhi food bulk order",
+        "Awadhi catering in Lucknow",
+        "Mughlai catering in Lucknow",
+        "Bulk biryani order Lucknow",
+        "Kebabs bulk order Lucknow",
+        "Awadhi catering in Gomti Nagar",
+        "Bulk food order in Gomti Nagar",
+        "Biryani bulk order Gomti Nagar",
+        "Awadhi catering for parties",
+        "Awadhi bulk orders for parties",
+        "Awadhi food tasting",
+        "seasonal tastings Awadhi food",
+        "Awadhi masterclass"
+],
       "location": {
         "@type": "Place",
         "name": "Firdaus Awadhi Kitchen",
@@ -38,8 +78,8 @@ const eventsJsonLd = {
       "@type": "WebPage",
       "@id": "https://www.firdausawadhikitchen.com/event#webpage",
       "url": "https://www.firdausawadhikitchen.com/event",
-      "name": "Events & Pop-Ups | Firdaus Awadhi Kitchen",
-      "description": "Curated events, collaborations and pop-ups by Firdaus Awadhi Kitchen, featuring Awadhi small plates, festive menus and pairing experiences across Lucknow.",
+      "name": "Events & Catering | Firdaus Awadhi Kitchen",
+      "description": "Firdaus Awadhi Kitchen offers curated culinary events and Awadhi catering services across Lucknow and Gomti Nagar, bringing the richness of traditional Awadhi and Mughlai cuisine to private parties, corporate gatherings, and festive celebrations. From intimate tasting experiences to large-scale catering and bulk orders, menus feature signature kebabs, slow-cooked dum biryanis, aromatic kormas, and festive spreads prepared using time-honoured techniques inspired by the royal kitchens of Lucknow, delivering authentic flavour and refined hospitality for every occasion.",
       "inLanguage": "en-IN",
       "isPartOf": {
         "@id": "https://www.firdausawadhikitchen.com/#website"
@@ -62,7 +102,7 @@ const Events = () => {
   return (
     <>
       <SEO
-        title="Events & Premium Catering – Awadhi & Mughlai Cuisine for Weddings & Celebrations"
+        title="Events & Premium Catering | Awadhi & Mughlai Cuisine for Celebrations"
         description="Host unforgettable events with premium Awadhi and Mughlai catering inspired by Lucknow’s UNESCO-recognized City of Gastronomy. Perfect for weddings, corporate events, and private gatherings."
         canonical={`${SITE_URL}${pathname}`}
          jsonLd={eventsJsonLd}
