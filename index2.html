@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate | Disability Resources for Families, Inc.</title>
+  <meta name="description" content="Make a tax-deductible donation to Disability Resources for Families, Inc. EIN 84-4218297." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; margin: 0; color: #111; background: #fafafa; }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 28px 18px 48px; }
+    .card { background: #fff; border: 1px solid #e6e6e6; border-radius: 14px; padding: 22px; box-shadow: 0 2px 10px rgba(0,0,0,.04); }
+    h1 { margin: 0 0 8px; font-size: 30px; }
+    h2 { margin: 22px 0 10px; font-size: 18px; }
+    p { margin: 10px 0; }
+    .muted { color: #444; font-size: 14px; }
+    .grid { display: grid; gap: 12px; grid-template-columns: 1fr; }
+    @media (min-width: 720px) { .grid { grid-template-columns: 1.1fr .9fr; align-items: start; } }
+    label { display: block; font-weight: 600; margin: 10px 0 6px; }
+    input[type="text"], input[type="email"], input[type="number"], textarea, select {
+      width: 100%; padding: 10px 12px; border: 1px solid #d7d7d7; border-radius: 10px; font-size: 15px; background: #fff;
+    }
+    textarea { min-height: 86px; resize: vertical; }
+    .row { display: grid; gap: 10px; grid-template-columns: 1fr; }
+    @media (min-width: 520px) { .row { grid-template-columns: 1fr 1fr; } }
+    .btn {
+      display: inline-block; width: 100%; padding: 12px 14px; border: 0; border-radius: 12px;
+      background: #111; color: #fff; font-weight: 700; font-size: 16px; cursor: pointer;
+    }
+    .btn:focus { outline: 3px solid rgba(0,0,0,.2); outline-offset: 2px; }
+    .note { background: #f6f7f8; border: 1px solid #e2e5e8; padding: 12px; border-radius: 12px; }
+    .fineprint { font-size: 13px; color: #444; }
+    .list { margin: 8px 0 0 18px; }
+    .pill { display: inline-block; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #f1f1f1; border: 1px solid #e0e0e0; margin-right: 6px; }
+    a { color: inherit; }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <div class="card">
+      <h1>Donate</h1>
+      <p class="muted">
+        Thank you for supporting families planning for the future of a loved one with disabilities.
+      </p>
+
+      <div class="note">
+        <div class="pill">Tax deductible</div>
+        <div class="pill">Secure PayPal checkout</div>
+        <p class="fineprint" style="margin:8px 0 0;">
+          Disability Resources for Families, Inc. is a 501(c)(3) nonprofit organization.
+          EIN: <strong>84-4218297</strong>.
+          Contributions are tax deductible to the extent allowed by law.
+          No goods or services were provided in exchange for your contribution.
+        </p>
+      </div>
+
+      <div class="grid" style="margin-top:16px;">
+        <section aria-label="Donation form">
+          <h2>Make a donation</h2>
+          <p class="muted">
+            Use the form below to donate by PayPal or credit card through PayPal.
+          </p>
+
+          <!-- PayPal Donations Form (PayPal Standard) -->
+          <!-- Replace the return and cancel_return URLs with your live website pages -->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" novalidate>
+            <!-- Required PayPal fields -->
+            <input type="hidden" name="cmd" value="_donations" />
+            <input type="hidden" name="business" value="tom@sanlaw.com" />
+            <input type="hidden" name="currency_code" value="USD" />
+
+            <!-- What the donor sees on PayPal -->
+            <input type="hidden" name="item_name" value="Disability Resources for Families, Inc. Donation" />
+            <input type="hidden" name="item_number" value="DRF-EIN-84-4218297" />
+
+            <!-- Optional behavior controls -->
+            <input type="hidden" name="no_shipping" value="1" />
+            <input type="hidden" name="cn" value="Optional note to Disability Resources for Families, Inc." />
+
+            <!-- After payment -->
+            <input type="hidden" name="return" value="https://www.specialneedstrustsonline.com/thank-you-for-your-donation/" />
+            <input type="hidden" name="cancel_return" value="https://www.specialneedstrustsonline.com/donate/" />
+
+            <label for="amount">Donation amount (USD)</label>
+            <input
+              id="amount"
+              name="amount"
+              type="number"
+              inputmode="decimal"
+              min="1"
+              step="0.01"
+              placeholder="50.00"
+              required
+              aria-describedby="amount_help"
+            />
+            <div id="amount_help" class="muted" style="font-size:13px;">
+              You can enter any amount. For monthly giving, see the note on the right.
+            </div>
+
+            <div class="row">
+              <div>
+                <label for="first_name">First name (optional)</label>
+                <input id="first_name" name="first_name" type="text" autocomplete="given-name" />
+              </div>
+              <div>
+                <label for="last_name">Last name (optional)</label>
+                <input id="last_name" name="last_name" type="text" autocomplete="family-name" />
+              </div>
+            </div>
+
+            <label for="email">Email (recommended for acknowledgment)</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+
+            <label for="memo">Note (optional)</label>
+            <textarea id="memo" name="memo" placeholder="In honor of, in memory of, or a short message"></textarea>
+
+            <p class="fineprint" style="margin-top:10px;">
+              By donating, you acknowledge you are making a charitable contribution and you will receive a confirmation from PayPal.
+            </p>
+
+            <button class="btn" type="submit">Donate securely with PayPal</button>
+          </form>
+
+          <h2>Need an acknowledgment for your records?</h2>
+          <p class="muted">
+            PayPal provides a donation receipt by email. If you need an additional acknowledgment from us,
+            contact us and we will provide one.
+          </p>
+        </section>
+
+        <aside aria-label="Donation disclosure and IRS information">
+          <h2>IRS required information</h2>
+          <p class="fineprint">
+            Please keep this page or your PayPal receipt for your tax records.
+          </p>
+
+          <ul class="list fineprint">
+            <li><strong>Organization:</strong> Disability Resources for Families, Inc.</li>
+            <li><strong>Tax status:</strong> 501(c)(3) nonprofit organization</li>
+            <li><strong>EIN:</strong> 84-4218297</li>
+            <li><strong>Deductibility:</strong> Contributions are tax deductible to the extent allowed by law.</li>
+            <li><strong>Quid pro quo statement:</strong> No goods or services were provided in exchange for your contribution.</li>
+          </ul>
+
+          <h2>Monthly donations</h2>
+          <p class="fineprint">
+            If you want to offer a recurring giving option, you can set up a separate PayPal subscription button
+            and place it here. If you want, I can generate that HTML too.
+          </p>
+
+          <h2>Privacy</h2>
+          <p class="fineprint">
+            We use your information only to process your donation, provide receipts, and communicate about our mission.
+            We do not sell donor information.
+          </p>
+
+          <h2>Contact</h2>
+          <p class="fineprint">
+            Questions about your donation or receipt: <a href="mailto:tom@specialneedstrustsonline.com">tom@specialneedstrustsonline.com</a>
+          </p>
+        </aside>
+      </div>
+
+      <footer style="margin-top:18px;">
+        <p class="fineprint">
+          Disclaimer: This page provides general information for donors. It is not tax advice.
+          Please consult your tax advisor regarding your specific situation.
+        </p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
