@@ -12,6 +12,7 @@ import Testimonials from "../components/testimonials";
 import NewsletterSection from "../components/newsletterSection";
 import { useLocation } from "react-router-dom";
 import EntryOverlay from "../components/entryOverlay";
+import IftariBoxesSection from "../components/Home/iftariBoxesSection";
 
 const homeJsonLd = {
   "@context": "https://schema.org",
@@ -185,6 +186,7 @@ const Home = () => {
         <IntroHome />
         <MeetTheChefBanner />
         <AboutSection />
+        <IftariBoxesSection />
         <SignatureDishes />
         <GallerySection />
         <QuoteBanner />
