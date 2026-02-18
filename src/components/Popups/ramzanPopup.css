@@ -1,0 +1,244 @@
+/* Full-screen overlay */
+.ramzanOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+}
+
+/* Modal container (FIX: no vw to avoid scrollbar-induced right shift) */
+.ramzanDialog {
+  width: 100%;
+  max-width: 920px;
+  margin-inline: auto;
+  outline: none;
+}
+
+/*
+  Frame system:
+  - We reserve space using padding based on --strip.
+  - Strips are painted as backgrounds, stretched to 100% (no gaps).
+  - We slightly overdraw (-2px) to avoid subpixel seams.
+*/
+.ramzanFrame {
+  --strip: clamp(18px, 3.2vw, 34px);
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+
+  background: #fff2dd;
+  color: #005931;
+
+  /* Default padding */
+  padding:
+    calc(var(--strip) + 22px)
+    26px
+    calc(var(--strip) + 24px)
+    26px;
+
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  transform: translateZ(0);
+}
+
+/* Strips */
+.ramzanStripTop,
+.ramzanStripBottom {
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  height: calc(var(--strip) + 2px);
+  z-index: 1;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+.ramzanStripTop {
+  top: -2px;
+}
+
+.ramzanStripBottom {
+  bottom: -2px;
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.ramzanStripLeft,
+.ramzanStripRight {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: calc(var(--strip) + 2px);
+  z-index: 1;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+.ramzanStripLeft {
+  left: -2px;
+}
+
+.ramzanStripRight {
+  right: -2px;
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+
+/* Content above strips */
+.ramzanContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Close button (Perfectly centered X on ALL screen sizes) */
+.ramzanClose {
+  position: absolute;
+  top: calc(var(--strip) + 10px);
+  right: calc(var(--strip) + 10px);
+  z-index: 3;
+
+  height: 44px;
+  width: 44px;
+  border-radius: 999px;
+
+  border: 3px solid rgba(0, 89, 49, 0.35);
+  background: rgba(255, 242, 221, 0.9);
+
+  display: grid;
+  place-items: center;
+
+  cursor: pointer;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+/* CSS-drawn X avoids font-metric mis-centering */
+.ramzanClose::before,
+.ramzanClose::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 3px;
+  background: #005931;
+  border-radius: 999px;
+
+  left: 50%;
+  top: 50%;
+  transform-origin: center;
+}
+
+.ramzanClose::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ramzanClose::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.ramzanClose:hover {
+  transform: scale(1.04);
+  background: rgba(255, 242, 221, 1);
+}
+
+.ramzanClose:focus-visible {
+  outline: 2px solid rgba(10, 107, 71, 0.55);
+  outline-offset: 2px;
+}
+
+/* Heading + copy */
+.ramzanHeading {
+  font-size: clamp(26px, 3.2vw, 40px);
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.ramzanCopy {
+  margin-top: 18px;
+  font-size: clamp(14px, 1.65vw, 16px);
+  line-height: 1.7;
+}
+
+.ramzanCopy p {
+  margin: 0;
+}
+
+.ramzanCopy p + p {
+  margin-top: 14px;
+}
+
+/* CTA */
+.ramzanActions {
+  margin-top: 18px;
+}
+
+.ramzanBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 30px;
+  border-radius: 999px;
+
+  background: #005931;
+  color: #fff2dd;
+  text-decoration: none;
+
+  font-size: 16px;
+  border: 1px solid rgba(0, 89, 49, 0.15);
+
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.ramzanBtn:hover {
+  transform: translateY(-1px);
+  background: #0a6b47;
+}
+
+.ramzanBtn:focus-visible {
+  outline: 2px solid rgba(10, 107, 71, 0.55);
+  outline-offset: 2px;
+}
+
+/* More padding on smaller screens (requested) */
+@media (max-width: 720px) {
+  .ramzanFrame {
+    padding:
+      calc(var(--strip) + 26px)
+      24px
+      calc(var(--strip) + 26px)
+      24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ramzanFrame {
+    border-radius: 14px;
+    padding:
+      calc(var(--strip) + 24px)
+      22px
+      calc(var(--strip) + 24px)
+      22px;
+  }
+
+  .ramzanClose {
+    height: 40px;
+    width: 40px;
+  }
+
+  .ramzanClose::before,
+  .ramzanClose::after {
+    width: 16px;
+    height: 3px;
+  }
+}

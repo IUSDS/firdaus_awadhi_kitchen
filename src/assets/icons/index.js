@@ -29,7 +29,12 @@ import chefStrip from "./chefStrip.webp"
 
 import sectionHanging from "./sectionHanging.webp"
 
+import bannerStripSide from "./bannerStripSide.webp"
+import bannerStripTop from "./bannerStripTop.webp"
+
 export {
+    bannerStripSide,
+    bannerStripTop,
     LogoG,
     LogoW,
     sectionStrip,
