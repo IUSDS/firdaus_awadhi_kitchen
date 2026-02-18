@@ -15,7 +15,7 @@ import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import RamzanPopup from "./components/Popups/RamzanPopup";
+import RamzanPopup from "./components/Popups/ramzanPopup";
 
 function App() {
   const { pathname } = useLocation();
