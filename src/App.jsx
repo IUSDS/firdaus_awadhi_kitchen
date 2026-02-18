@@ -16,6 +16,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import RamzanPopup from "./components/Popups/ramzanPopup";
+import AnnouncementBar from "./components/announcementBar";
 
 function App() {
   const { pathname } = useLocation();
@@ -46,6 +47,7 @@ function App() {
       storageKey="firdaus_ramzan_popup_dismissed_v1"
       learnMoreTargetId="iftari-boxes"
     />
+      <AnnouncementBar />
       <Navbar />
       <div className="flex-grow">
         <Routes>
