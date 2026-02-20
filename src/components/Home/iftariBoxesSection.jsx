@@ -95,7 +95,7 @@ export default function IftariBoxesSection({
   eyebrow = "The Spirit of Ramzan on Your Dastarkhwan",
   heading = "Iftari Boxes",
   subheading = "Bring the Feast Home",
-  whatsappHref = "https://chat.whatsapp.com/JDw9FG0ktD4DDPzB6qK3Kl",
+  whatsappHref = "https://chat.whatsapp.com/HxzMgCsmMeG0oYg2EULtV8?mode=gi_t",
   whatsappLabel = "Join WhatsApp Community",
   images,
 }) {
