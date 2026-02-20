@@ -61,14 +61,17 @@
   pointer-events: none;
 }
 
+/* ✅ FIX: flip TOP vertically so straight edge faces outward (top) */
 .ramzanStripTop {
   top: -2px;
+  transform: scaleY(-1);
+  transform-origin: center;
 }
 
+/* ✅ FIX: do NOT rotate bottom (keep straight edge outward at bottom) */
 .ramzanStripBottom {
   bottom: -2px;
-  transform: rotate(180deg);
-  transform-origin: center;
+  transform: none;
 }
 
 .ramzanStripLeft,
@@ -85,14 +88,17 @@
   pointer-events: none;
 }
 
+/* ✅ FIX: flip LEFT horizontally so straight edge faces outward (left) */
 .ramzanStripLeft {
   left: -2px;
-}
-
-.ramzanStripRight {
-  right: -2px;
   transform: scaleX(-1);
   transform-origin: center;
+}
+
+/* ✅ FIX: do NOT flip right (asset already has straight edge outward on right) */
+.ramzanStripRight {
+  right: -2px;
+  transform: none;
 }
 
 /* Content above strips */
@@ -210,7 +216,7 @@
   outline-offset: 2px;
 }
 
-/* More padding on smaller screens (requested) */
+/* More padding on smaller screens */
 @media (max-width: 720px) {
   .ramzanFrame {
     padding:
