@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { sectionStrip } from "../../assets/icons";
 import { underlineGrow } from "./eventsGallery";
-import { iftari1, iftari2, iftari3, iftari4, iftari5, iftari6 } from "../../assets/iftari";
+import { iftari1, iftari2,iftari4, iftari5, iftari6 } from "../../assets/iftari";
 
 function WhatsAppIcon({ className = "h-5 w-5" }) {
   // Simple WhatsApp mark as inline SVG (keeps bundle lean, no extra deps)
@@ -28,6 +28,9 @@ function WhatsAppIcon({ className = "h-5 w-5" }) {
 function ImageStrip({ images, ariaLabel = "Iftari Boxes photo gallery" }) {
   const list = useMemo(() => (images?.filter(Boolean) ?? []).slice(0, 10), [images]);
   if (!list.length) return null;
+
+  const tabletImages = list.slice(0, 4);
+  const desktopImages = list.slice(0, 6);
 
   const Tile = ({ src, className = "" }) => (
     <div
@@ -74,15 +77,25 @@ function ImageStrip({ images, ariaLabel = "Iftari Boxes photo gallery" }) {
       </div>
 
       {/* Tablet */}
-      <div className="hidden sm:grid lg:hidden grid-cols-4 gap-3">
-        {list.slice(0, 4).map((src, idx) => (
+      <div
+        className="hidden sm:grid lg:hidden gap-3"
+        style={{
+          gridTemplateColumns: `repeat(${tabletImages.length}, minmax(0, 1fr))`,
+        }}
+      >
+        {tabletImages.map((src, idx) => (
           <Tile key={`s-${idx}-${src}`} src={src} className="h-[220px]" />
         ))}
       </div>
 
       {/* Desktop */}
-      <div className="hidden lg:grid grid-cols-6 gap-3 xl:gap-4">
-        {list.slice(0, 6).map((src, idx) => (
+      <div
+        className="hidden lg:grid gap-3 xl:gap-4"
+        style={{
+          gridTemplateColumns: `repeat(${desktopImages.length}, minmax(0, 1fr))`,
+        }}
+      >
+        {desktopImages.map((src, idx) => (
           <Tile key={`l-${idx}-${src}`} src={src} className="h-[280px] 2xl:h-[310px]" />
         ))}
       </div>
@@ -100,7 +113,7 @@ export default function IftariBoxesSection({
   images,
 }) {
   const fallbackImages = useMemo(
-    () => [iftari1,iftari2,iftari3, iftari4, iftari5, iftari6],
+    () => [iftari1,iftari2, iftari4, iftari5, iftari6],
     []
   );
 
