@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { sectionStrip } from "../../assets/icons";
 import { underlineGrow } from "./eventsGallery";
-import { iftari1, iftari2, iftari3, iftari4, iftari5, iftari6 } from "../../assets/iftari";
+import { iftari1, iftari2, iftari4, iftari5, iftari6 } from "../../assets/iftari";
 
 function WhatsAppIcon({ className = "h-5 w-5" }) {
   // Simple WhatsApp mark as inline SVG (keeps bundle lean, no extra deps)
@@ -100,7 +100,7 @@ export default function IftariBoxesSection({
   images,
 }) {
   const fallbackImages = useMemo(
-    () => [iftari1,iftari2,iftari3, iftari4, iftari5, iftari6],
+    () => [iftari1,iftari2, iftari4, iftari5, iftari6],
     []
   );
 
